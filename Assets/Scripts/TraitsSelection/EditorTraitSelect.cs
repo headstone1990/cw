@@ -146,13 +146,13 @@ public class EditorTraitSelect : MonoBehaviour
         }
     }
 
-    private string ReverseConvert()
-    {
-        switch (_traitSelected)
-        {
+    ////private string ReverseConvert()
+    //{
+    //    switch (_traitSelected)
+    //    {
                 
-        }
-    }
+    //    }
+    //}
 
     public void TraitSelect(string trait, string description)
     {
