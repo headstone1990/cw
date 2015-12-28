@@ -1,0 +1,28 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# Sprite sheet: buttons_light.png (1024 x 1024)
+# $TexturePacker:SmartUpdate:61aedc8f67ae0f370e389864f84f14db:959e4b452798ec0107ce5af786193049:f3e70368d5119435d9136db259e3462b$
+#
+
+apply;772;912;110;110;0.5;0.5
+back;2;861;383;161;0.5;0.5
+blanc_button;387;861;383;161;0.5;0.5
+cancel;884;912;110;110;0.5;0.5
+create;2;698;383;161;0.5;0.5
+cross;772;577;109;109;0.4954128440366973;0.4954128440366973
+done;387;698;383;161;0.5;0.5
+editor;2;535;383;161;0.5;0.5
+exit;387;535;383;161;0.5;0.5
+info;2;372;383;161;0.5;0.5
+left;772;800;110;110;0.5;0.5
+load_game;2;209;383;161;0.5;0.5
+menu;884;800;110;110;0.5;0.5
+new_game;2;46;383;161;0.5;0.5
+next;387;372;383;161;0.5;0.5
+right;772;688;110;110;0.5;0.5
+select;387;209;383;161;0.5;0.5
+toggle;884;688;110;110;0.5;0.5
