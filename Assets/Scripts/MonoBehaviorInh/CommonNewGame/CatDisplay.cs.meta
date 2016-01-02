@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: 5a16f0b8cbcb00d4b9df9eb598ddd4ed
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - shapeObj: {fileID: 127084, guid: c8e065573ac9e1a42850b6d3f50e1efb, type: 2}
+  - eyesTypeObj: {fileID: 127074, guid: c8e065573ac9e1a42850b6d3f50e1efb, type: 2}
+  - shadowObj: {fileID: 127076, guid: c8e065573ac9e1a42850b6d3f50e1efb, type: 2}
+  - earsObj: {fileID: 127082, guid: c8e065573ac9e1a42850b6d3f50e1efb, type: 2}
+  - noseObj: {fileID: 127080, guid: c8e065573ac9e1a42850b6d3f50e1efb, type: 2}
+  - eyesColorObj: {fileID: 127086, guid: c8e065573ac9e1a42850b6d3f50e1efb, type: 2}
+  - colorMainObj: {fileID: 168108, guid: 5079681519d432c4dad7dba028ff1922, type: 2}
+  - colorBackObj: {fileID: 168112, guid: 5079681519d432c4dad7dba028ff1922, type: 2}
+  - colorBackFootObj: {fileID: 168104, guid: 5079681519d432c4dad7dba028ff1922, type: 2}
+  - colorBreastObj: {fileID: 168120, guid: 5079681519d432c4dad7dba028ff1922, type: 2}
+  - colorEarsObj: {fileID: 168090, guid: 5079681519d432c4dad7dba028ff1922, type: 2}
+  - colorHoseObj: {fileID: 168092, guid: 5079681519d432c4dad7dba028ff1922, type: 2}
+  - colorSocksObj: {fileID: 168122, guid: 5079681519d432c4dad7dba028ff1922, type: 2}
+  - colorTailObj: {fileID: 168094, guid: 5079681519d432c4dad7dba028ff1922, type: 2}
+  - colorTailTipObj: {fileID: 168114, guid: 5079681519d432c4dad7dba028ff1922, type: 2}
+  - stripsSObj: {fileID: 168096, guid: 5079681519d432c4dad7dba028ff1922, type: 2}
+  - stripsMObj: {fileID: 168110, guid: 5079681519d432c4dad7dba028ff1922, type: 2}
+  - stripsLObj: {fileID: 168118, guid: 5079681519d432c4dad7dba028ff1922, type: 2}
+  - spotsSObj: {fileID: 168100, guid: 5079681519d432c4dad7dba028ff1922, type: 2}
+  - spotsMObj: {fileID: 168102, guid: 5079681519d432c4dad7dba028ff1922, type: 2}
+  - spotsLObj: {fileID: 168106, guid: 5079681519d432c4dad7dba028ff1922, type: 2}
+  - spotsLEObj: {fileID: 168116, guid: 5079681519d432c4dad7dba028ff1922, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
