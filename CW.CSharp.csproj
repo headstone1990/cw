@@ -13,11 +13,13 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.3.1f1</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -57,12 +59,6 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
@@ -77,49 +73,46 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Common\ButtonAlpha.cs" />
-    <Compile Include="Assets\Scripts\Common\ButtonAnimator.cs" />
-    <Compile Include="Assets\Scripts\Common\Exit.cs" />
-    <Compile Include="Assets\Scripts\CommonNewGame\CatDisplay.cs" />
-    <Compile Include="Assets\Scripts\CommonNewGame\PresetsOrEditor.cs" />
-    <Compile Include="Assets\Scripts\EditorScripts\BeforeEditorOpen.cs" />
-    <Compile Include="Assets\Scripts\EditorScripts\DrawCat.cs" />
-    <Compile Include="Assets\Scripts\EditorScripts\EditorAssigner.cs" />
-    <Compile Include="Assets\Scripts\EscMenu.cs" />
-    <Compile Include="Assets\Scripts\EscPressingDetector.cs" />
-    <Compile Include="Assets\Scripts\GenderAndName\GenderSelect.cs" />
-    <Compile Include="Assets\Scripts\GenderAndName\NameInput.cs" />
-    <Compile Include="Assets\Scripts\Intro\ButtonSelect.cs" />
-    <Compile Include="Assets\Scripts\Intro\Next.cs" />
-    <Compile Include="Assets\Scripts\Intro\OnOffObj.cs" />
-    <Compile Include="Assets\Scripts\Intro\SaveSelect.cs" />
-    <Compile Include="Assets\Scripts\Intro\SelectText.cs" />
-    <Compile Include="Assets\Scripts\MouseScrollRect.cs" />
-    <Compile Include="Assets\Scripts\NewStructure\Cat.cs" />
-    <Compile Include="Assets\Scripts\NewStructure\CatStorage.cs" />
-    <Compile Include="Assets\Scripts\NewStructure\Characteristics.cs" />
-    <Compile Include="Assets\Scripts\NewStructure\Enums\Traits.cs" />
-    <Compile Include="Assets\Scripts\NewStructure\Player.cs" />
-    <Compile Include="Assets\Scripts\NewStructure\PlayerAvatar.cs" />
-    <Compile Include="Assets\Scripts\NewStructure\StripsAndSpotsSibling.cs" />
-    <Compile Include="Assets\Scripts\Npc.cs" />
-    <Compile Include="Assets\Scripts\PanoramaControler.cs" />
-    <Compile Include="Assets\Scripts\PanoramaRight.cs" />
-    <Compile Include="Assets\Scripts\Presets\FirstField.cs" />
-    <Compile Include="Assets\Scripts\Presets\FourthField.cs" />
-    <Compile Include="Assets\Scripts\Presets\Presets.cs" />
-    <Compile Include="Assets\Scripts\Presets\SecondField.cs" />
-    <Compile Include="Assets\Scripts\Presets\ThirdField.cs" />
-    <Compile Include="Assets\Scripts\Presets\ZeroField.cs" />
-    <Compile Include="Assets\Scripts\ScrollBarMouseDown.cs" />
-    <Compile Include="Assets\Scripts\Settings\PanoramaScrollSpeed.cs" />
+    <Compile Include="Assets\Scripts\Cat.cs" />
+    <Compile Include="Assets\Scripts\Characteristics.cs" />
+    <Compile Include="Assets\Scripts\Enums\Traits.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\CatStorage.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\Common\ButtonAlpha.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\Common\ButtonAnimator.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\Common\EscPressingDetector.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\Common\Exit.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\Common\MouseScrollRect.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\CommonNewGame\CatDisplay.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\CommonNewGame\PresetsOrEditor.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\EditorScripts\BeforeEditorOpen.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\EditorScripts\DrawCat.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\EditorScripts\EditorAssigner.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\GenderAndName\GenderSelect.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\GenderAndName\NameInput.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\GenderAndName\WarningGender.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\Intro\ButtonSelect.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\Intro\Next.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\Intro\OnOffObj.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\Intro\SaveSelect.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\Intro\SelectText.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\Panorama\PanoramaControler.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\Panorama\PanoramaRight.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\Presets\FirstField.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\Presets\FourthField.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\Presets\Presets.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\Presets\SecondField.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\Presets\ThirdField.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\Presets\ZeroField.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\Settings\PanoramaScrollSpeed.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\Settings\VolumeChange.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\TraitsSelection\Character.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\TraitsSelection\EditorTraitSelect.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\TraitsSelection\TraitSelect.cs" />
+    <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\PlayerAvatar.cs" />
     <Compile Include="Assets\Scripts\StaticClass\GlobalVariables.cs" />
+    <Compile Include="Assets\Scripts\StripsAndSpotsSibling.cs" />
     <Compile Include="Assets\Scripts\Test.cs" />
-    <Compile Include="Assets\Scripts\TraitsSelection\Character.cs" />
-    <Compile Include="Assets\Scripts\TraitsSelection\EditorTraitSelect.cs" />
-    <Compile Include="Assets\Scripts\TraitsSelection\TraitSelect.cs" />
-    <Compile Include="Assets\Scripts\VolumeChange.cs" />
-    <Compile Include="Assets\Scripts\WarningGender.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\ClassDiagram1.cd" />

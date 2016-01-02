@@ -2,9 +2,12 @@
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Cat">
     <Position X="7" Y="0.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
     <TypeIdentifier>
-      <HashCode>EAAAAAAAAAAAAACAiEQAAAQgEAAAAAgAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\Scripts\NewStructure\Cat.cs</FileName>
+      <HashCode>EAAAAAAAAAAAAACAiEQAAAQgEAAAAAgAAQAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Cat.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Characteristics" />
@@ -19,7 +22,7 @@
     </Compartments>
     <TypeIdentifier>
       <HashCode>AABIAgBAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\Scripts\NewStructure\PlayerAvatar.cs</FileName>
+      <FileName>Assets\Scripts\PlayerAvatar.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Sibling" />
@@ -28,8 +31,8 @@
   <Class Name="Player" Collapsed="true">
     <Position X="7" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAECAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\Scripts\NewStructure\Player.cs</FileName>
+      <HashCode>AAAAAAECAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="PlayerAvatar" />
@@ -39,7 +42,7 @@
     <Position X="4" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAQAAAEA=</HashCode>
-      <FileName>Assets\Scripts\NewStructure\CatStorage.cs</FileName>
+      <FileName>Assets\Scripts\MonoBehaviorInh\CatStorage.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Player" />
@@ -49,14 +52,14 @@
     <Position X="10.25" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAGEAAAADAQBAAAAAAQAAABACAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\Scripts\NewStructure\Characteristics.cs</FileName>
+      <FileName>Assets\Scripts\Characteristics.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="StripsAndSpotsSibling">
     <Position X="13" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAABAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\Scripts\NewStructure\StripsAndSpotsSibling.cs</FileName>
+      <FileName>Assets\Scripts\StripsAndSpotsSibling.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
