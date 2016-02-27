@@ -18,29 +18,29 @@ namespace MonoBehaviorInh.EditorScripts
             _playerAvatar = GameObject.FindGameObjectWithTag("CatStorage").GetComponent<CatStorage>().Player.PlayerAvatar;
         }
 
-        public void ButtonClick()
-        {
-            if (string.IsNullOrEmpty(_playerAvatar["ColorMain"]))
-            {
-                ActivateWarningAndChangeWarningText("Выберете основной окрас шерсти");
-            }
-            else if(string.IsNullOrEmpty(_playerAvatar["Ears"]))
-            {
-                ActivateWarningAndChangeWarningText("Выберете цвет ушей");
-            }
-            else if (string.IsNullOrEmpty(_playerAvatar["Nose"]))
-            {
-                ActivateWarningAndChangeWarningText("Выберете цвет носа");
-            }
-            else if (string.IsNullOrEmpty(_playerAvatar["EyesColor"]))
-            {
-                ActivateWarningAndChangeWarningText("Выберете цвет глаз");
-            }
-            else
-            {
-                SceneManager.LoadScene("TraitsSelection");
-            }
-        }
+        //public void ButtonClick()
+        //{
+        //    if (string.IsNullOrEmpty(_playerAvatar["ColorMain"]))
+        //    {
+        //        ActivateWarningAndChangeWarningText("Выберете основной окрас шерсти");
+        //    }
+        //    else if(string.IsNullOrEmpty(_playerAvatar["Ears"]))
+        //    {
+        //        ActivateWarningAndChangeWarningText("Выберете цвет ушей");
+        //    }
+        //    else if (string.IsNullOrEmpty(_playerAvatar["Nose"]))
+        //    {
+        //        ActivateWarningAndChangeWarningText("Выберете цвет носа");
+        //    }
+        //    else if (string.IsNullOrEmpty(_playerAvatar["EyesColor"]))
+        //    {
+        //        ActivateWarningAndChangeWarningText("Выберете цвет глаз");
+        //    }
+        //    else
+        //    {
+        //        SceneManager.LoadScene("TraitsSelection");
+        //    }
+        //}
 
         private void ActivateWarningAndChangeWarningText(string warningText)
         {

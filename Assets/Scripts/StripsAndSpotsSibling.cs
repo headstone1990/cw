@@ -2,19 +2,19 @@
 
 public class StripsAndSpotsSibling
 {
-    private Dictionary<string, int> _dictionary = new Dictionary<string, int>()
+    private readonly Dictionary<PlayerAvatar.Parts, int> _dictionary = new Dictionary<PlayerAvatar.Parts, int>()
     {
-        {"StripsS", 0},
-        {"StripsM", 0},
-        {"StripsL", 0},
-        {"SpotsS", 0},
-        {"SpotsM", 0},
-        {"SpotsL", 0},
-        {"SpotsLe", 0}
+        {PlayerAvatar.Parts.StripsS, 0},
+        {PlayerAvatar.Parts.StripsM, 0},
+        {PlayerAvatar.Parts.StripsL, 0},
+        {PlayerAvatar.Parts.SpotsS, 0},
+        {PlayerAvatar.Parts.SpotsM, 0},
+        {PlayerAvatar.Parts.SpotsL, 0},
+        {PlayerAvatar.Parts.SpotsLe, 0},
     };
 
 
-    public int this[string key]
+    public int this[PlayerAvatar.Parts key]
     {
         get { return _dictionary[key]; }
         set { _dictionary[key] = value; }

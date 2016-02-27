@@ -70,17 +70,18 @@
     <Compile Include="Assets\Scripts\Characteristics.cs" />
     <Compile Include="Assets\Scripts\Enums\Traits.cs" />
     <Compile Include="Assets\Scripts\MonoBehaviorInh\CatStorage.cs" />
-    <Compile Include="Assets\Scripts\MonoBehaviorInh\Common\ButtonAlpha.cs" />
     <Compile Include="Assets\Scripts\MonoBehaviorInh\Common\ButtonAnimator.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\Common\CutterOnAlphaChannel.cs" />
     <Compile Include="Assets\Scripts\MonoBehaviorInh\Common\EscPressingDetector.cs" />
     <Compile Include="Assets\Scripts\MonoBehaviorInh\Common\Exit.cs" />
     <Compile Include="Assets\Scripts\MonoBehaviorInh\Common\MouseScrollRect.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\Common\SceneLoader.cs" />
     <Compile Include="Assets\Scripts\MonoBehaviorInh\CommonNewGame\CatDisplay.cs" />
     <Compile Include="Assets\Scripts\MonoBehaviorInh\CommonNewGame\PresetsOrEditor.cs" />
-    <Compile Include="Assets\Scripts\MonoBehaviorInh\EditorScripts\BeforeEditorOpen.cs" />
-    <Compile Include="Assets\Scripts\MonoBehaviorInh\EditorScripts\DrawCat.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\EditorScripts\CatPainter.cs" />
     <Compile Include="Assets\Scripts\MonoBehaviorInh\EditorScripts\EditorAssigner.cs" />
     <Compile Include="Assets\Scripts\MonoBehaviorInh\EditorScripts\NextButton.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviorInh\EditorScripts\PlayerCreator.cs" />
     <Compile Include="Assets\Scripts\MonoBehaviorInh\GenderAndName\GenderSelect.cs" />
     <Compile Include="Assets\Scripts\MonoBehaviorInh\GenderAndName\NameInput.cs" />
     <Compile Include="Assets\Scripts\MonoBehaviorInh\GenderAndName\WarningGender.cs" />
@@ -107,6 +108,7 @@
     <Compile Include="Assets\Scripts\StaticClass\GlobalVariables.cs" />
     <Compile Include="Assets\Scripts\StripsAndSpotsSibling.cs" />
     <Compile Include="Assets\Scripts\Test.cs" />
+    <Compile Include="Assets\Scripts\Test2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\ClassDiagram1.cd" />
