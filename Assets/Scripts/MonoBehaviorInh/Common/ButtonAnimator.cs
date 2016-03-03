@@ -3,6 +3,8 @@ using UnityEngine.EventSystems;
 
 namespace MonoBehaviorInh.Common
 {
+    [RequireComponent(typeof(AudioSource))]
+    [RequireComponent(typeof(Animator))]
     public class ButtonAnimator : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler, IPointerUpHandler {
         private Animator _animator;
         private AudioSource _audioSource;
@@ -21,7 +23,7 @@ namespace MonoBehaviorInh.Common
 
         public void OnPointerEnter(PointerEventData eventData)
         {
-            _animator.SetBool("mouseEnter", true);
+            _animator.SetBool("IsMouseEnter", true);
             if (_isMouseDown == false)
             {
                 _audioSource.PlayOneShot(_enter);
@@ -30,17 +32,18 @@ namespace MonoBehaviorInh.Common
         }
         public void OnPointerExit(PointerEventData eventData)
         {
-            _animator.SetBool("mouseEnter", false);
+            _animator.SetBool("IsMouseEnter", false);
+
         }
         public void OnPointerDown(PointerEventData eventData)
         {
-            _animator.SetBool("mouseDown", true);
+            _animator.SetBool("isMouseDown", true);
             _isMouseDown = true;
             _audioSource.PlayOneShot(_down);
         }
         public void OnPointerUp(PointerEventData eventData)
         {
-            _animator.SetBool("mouseDown", false);
+            _animator.SetBool("isMouseDown", false);
             _isMouseDown = false;
         }
     }
