@@ -7,7 +7,7 @@ namespace MonoBehaviorInh.EditorScripts
 {
     public class NextButton : MonoBehaviour
     {
-        private PlayerAvatar _playerAvatar;
+        //private PlayerAvatar _playerAvatar;
         [SerializeField]
         private GameObject _warning;
         [SerializeField]
@@ -15,7 +15,7 @@ namespace MonoBehaviorInh.EditorScripts
 
         private void Awake()
         {
-            _playerAvatar = GameObject.FindGameObjectWithTag("CatStorage").GetComponent<CatStorage>().Player.PlayerAvatar;
+            //_playerAvatar = GameObject.FindGameObjectWithTag("CatStorage").GetComponent<CatStorage>().Player.PlayerAvatar;
         }
 
         //public void ButtonClick()

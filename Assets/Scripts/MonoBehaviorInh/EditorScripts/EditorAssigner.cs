@@ -23,6 +23,9 @@ namespace MonoBehaviorInh.EditorScripts
         [SerializeField]
         private PlayerAvatar.FurColorsAndStripsAndSpots _furColorAndStripsAndSpots;
 
+        private const int DefaultValue = 0;
+
+
 
         private void Start()
         {
@@ -75,7 +78,7 @@ namespace MonoBehaviorInh.EditorScripts
                     break;
                 case PlayerAvatar.Parts.ColorEars:
                     _playerAvatar[PlayerAvatar.Parts.ColorEars] = _furColorAndStripsAndSpots;
-                    _catPainter.DrawFurColors(PlayerAvatar.Parts.Ears);
+                    _catPainter.DrawFurColors(PlayerAvatar.Parts.ColorEars);
                     break;
                 case PlayerAvatar.Parts.ColorHose:
                     _playerAvatar[PlayerAvatar.Parts.ColorHose] = _furColorAndStripsAndSpots;
@@ -148,109 +151,6 @@ namespace MonoBehaviorInh.EditorScripts
                     _catPainter.DrawStripsAndSpots(part);
                     _catPainter.SetSibling(part.ToString());
                 }
-                    break;
-            }
-        }
-        public void AssignNone()
-        {
-            switch (_part)
-            {
-                case PlayerAvatar.Parts.EyesColor:
-                    _playerAvatar[PlayerAvatar.Parts.EyesColor] = PlayerAvatar.EyesColors.None;
-                    _catPainter.DrawEyesColor();
-                    break;
-                case PlayerAvatar.Parts.Ears:
-                    _playerAvatar[PlayerAvatar.Parts.Ears] = PlayerAvatar.EarsAndNoses.None;
-                    _catPainter.DrawEars();
-                    break;
-                case PlayerAvatar.Parts.Nose:
-                    _playerAvatar[PlayerAvatar.Parts.Nose] = PlayerAvatar.EarsAndNoses.None;
-                    _catPainter.DrawNose();
-                    break;
-                case PlayerAvatar.Parts.ColorMain:
-                    _playerAvatar[PlayerAvatar.Parts.ColorMain] = PlayerAvatar.FurColorsAndStripsAndSpots.None;
-                    _catPainter.DrawFurColors(PlayerAvatar.Parts.ColorMain);
-                    break;
-                case PlayerAvatar.Parts.ColorBack:
-                    _playerAvatar[PlayerAvatar.Parts.ColorBack] = PlayerAvatar.FurColorsAndStripsAndSpots.None;
-                    _catPainter.DrawFurColors(PlayerAvatar.Parts.ColorBack);
-                    break;
-                case PlayerAvatar.Parts.ColorBackFoot:
-                    _playerAvatar[PlayerAvatar.Parts.ColorBackFoot] = PlayerAvatar.FurColorsAndStripsAndSpots.None;
-                    _catPainter.DrawFurColors(PlayerAvatar.Parts.ColorBackFoot);
-                    break;
-                case PlayerAvatar.Parts.ColorBreast:
-                    _playerAvatar[PlayerAvatar.Parts.ColorBreast] = PlayerAvatar.FurColorsAndStripsAndSpots.None;
-                    _catPainter.DrawFurColors(PlayerAvatar.Parts.ColorBreast);
-                    break;
-                case PlayerAvatar.Parts.ColorEars:
-                    _playerAvatar[PlayerAvatar.Parts.ColorEars] = PlayerAvatar.FurColorsAndStripsAndSpots.None;
-                    _catPainter.DrawFurColors(PlayerAvatar.Parts.Ears);
-                    break;
-                case PlayerAvatar.Parts.ColorHose:
-                    _playerAvatar[PlayerAvatar.Parts.ColorHose] = PlayerAvatar.FurColorsAndStripsAndSpots.None;
-                    _catPainter.DrawFurColors(PlayerAvatar.Parts.ColorHose);
-                    break;
-                case PlayerAvatar.Parts.ColorSocks:
-                    _playerAvatar[PlayerAvatar.Parts.ColorSocks] = PlayerAvatar.FurColorsAndStripsAndSpots.None;
-                    _catPainter.DrawFurColors(PlayerAvatar.Parts.ColorSocks);
-                    break;
-                case PlayerAvatar.Parts.ColorTail:
-                    _playerAvatar[PlayerAvatar.Parts.ColorTail] = PlayerAvatar.FurColorsAndStripsAndSpots.None;
-                    _catPainter.DrawFurColors(PlayerAvatar.Parts.ColorTail);
-                    break;
-                case PlayerAvatar.Parts.ColorTailTip:
-                    _playerAvatar[PlayerAvatar.Parts.ColorTailTip] = PlayerAvatar.FurColorsAndStripsAndSpots.None;
-                    _catPainter.DrawFurColors(PlayerAvatar.Parts.ColorTailTip);
-                    break;
-                case PlayerAvatar.Parts.StripsS:
-                    {
-                        const PlayerAvatar.Parts part = PlayerAvatar.Parts.StripsS;
-                        _playerAvatar[part] = PlayerAvatar.FurColorsAndStripsAndSpots.None;
-                        _catPainter.DrawStripsAndSpots(part);
-                    }
-                    break;
-                case PlayerAvatar.Parts.StripsM:
-                    {
-                        const PlayerAvatar.Parts part = PlayerAvatar.Parts.StripsM;
-                        _playerAvatar[part] = PlayerAvatar.FurColorsAndStripsAndSpots.None;
-                        _catPainter.DrawStripsAndSpots(part);
-                    }
-                    break;
-                case PlayerAvatar.Parts.StripsL:
-                    {
-                        const PlayerAvatar.Parts part = PlayerAvatar.Parts.StripsL;
-                        _playerAvatar[part] = PlayerAvatar.FurColorsAndStripsAndSpots.None;
-                        _catPainter.DrawStripsAndSpots(part);
-                    }
-                    break;
-                case PlayerAvatar.Parts.SpotsS:
-                    {
-                        const PlayerAvatar.Parts part = PlayerAvatar.Parts.SpotsS;
-                        _playerAvatar[part] = PlayerAvatar.FurColorsAndStripsAndSpots.None;
-                        _catPainter.DrawStripsAndSpots(part);
-                    }
-                    break;
-                case PlayerAvatar.Parts.SpotsM:
-                    {
-                        const PlayerAvatar.Parts part = PlayerAvatar.Parts.SpotsM;
-                        _playerAvatar[part] = PlayerAvatar.FurColorsAndStripsAndSpots.None;
-                        _catPainter.DrawStripsAndSpots(part);
-                    }
-                    break;
-                case PlayerAvatar.Parts.SpotsL:
-                    {
-                        const PlayerAvatar.Parts part = PlayerAvatar.Parts.SpotsL;
-                        _playerAvatar[part] = PlayerAvatar.FurColorsAndStripsAndSpots.None;
-                        _catPainter.DrawStripsAndSpots(part);
-                    }
-                    break;
-                case PlayerAvatar.Parts.SpotsLe:
-                    {
-                        const PlayerAvatar.Parts part = PlayerAvatar.Parts.SpotsLe;
-                        _playerAvatar[part] = PlayerAvatar.FurColorsAndStripsAndSpots.None;
-                        _catPainter.DrawStripsAndSpots(part);
-                    }
                     break;
             }
         }

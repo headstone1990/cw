@@ -28,12 +28,13 @@ public class Test : MonoBehaviour
 
         Texture2D result = new Texture2D(1000, 600, TextureFormat.ARGB32, false);
         result.SetPixels(pixResult);
+        //result.Resize(1920, 1080);
         result.Apply();
 
 
         //var c = ImageAsset1.bytes.Concat(ImageAsset2.bytes).ToArray();
         //tex.LoadRawTextureData(c);
-        _spite1 = Sprite.Create(result, new Rect(0, 0, 1000, 600), new Vector2(0, 0));
+        
         Image.sprite = _spite1;
 
         

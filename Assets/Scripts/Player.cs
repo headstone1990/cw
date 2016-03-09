@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using UnityEngine;
 
 public class Player : Cat
 {
@@ -11,4 +12,6 @@ public class Player : Cat
         get { return _playerAvatar; }
         set { _playerAvatar = value; }
     }
+
+    public Texture2D CatImage { get; set; }
 }

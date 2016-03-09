@@ -9,6 +9,10 @@ TagManager:
   - EscMenu
   - CatStorage
   - Script
+  - asteroid
+  - ship
+  - PartImage1
+  - PartImage2
   layers:
   - Default
   - TransparentFX
@@ -18,7 +22,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - IgnoreCamera
   - 
   - 
   - 

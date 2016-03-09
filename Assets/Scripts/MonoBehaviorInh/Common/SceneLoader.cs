@@ -6,7 +6,7 @@ namespace MonoBehaviorInh.Common
     public class SceneLoader : MonoBehaviour {
 
         [SerializeField]
-        private string _location;
+        private string _location = null; // Set in inspector
 
         public void LoadScene()
         {

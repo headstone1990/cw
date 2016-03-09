@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UserExceptions;
 
 namespace MonoBehaviorInh
 {
@@ -16,10 +17,17 @@ namespace MonoBehaviorInh
 
         public void CreatePlayer(PlayerAvatar.FurryTypes furryType, PlayerAvatar.FaceTypes faceType, PlayerAvatar.EyesTypes eyesType)
         {
-            Player = new Player();
-            Player.PlayerAvatar[PlayerAvatar.Parts.FaceType] = faceType;
-            Player.PlayerAvatar[PlayerAvatar.Parts.FurryType] = furryType;
-            Player.PlayerAvatar[PlayerAvatar.Parts.EyesType] = eyesType;
+            if (Player == null)
+            {
+                Player = new Player();
+                Player.PlayerAvatar[PlayerAvatar.Parts.FaceType] = faceType;
+                Player.PlayerAvatar[PlayerAvatar.Parts.FurryType] = furryType;
+                Player.PlayerAvatar[PlayerAvatar.Parts.EyesType] = eyesType;
+            }
+            else
+            {
+                throw new MoreThanOnePlayerCreatedException();
+            }
         }
     }
 }

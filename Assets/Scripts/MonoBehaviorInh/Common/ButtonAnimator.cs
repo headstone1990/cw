@@ -10,9 +10,9 @@ namespace MonoBehaviorInh.Common
         private AudioSource _audioSource;
         private bool _isMouseDown;
         [SerializeField]
-        private AudioClip _enter;
+        private AudioClip _enter = null; // Set in inspector
         [SerializeField]
-        private AudioClip _down;
+        private AudioClip _down = null; // Set in inspector
 
 
         private void Awake()
