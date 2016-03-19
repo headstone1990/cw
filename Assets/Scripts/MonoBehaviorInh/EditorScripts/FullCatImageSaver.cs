@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using System.Collections.Generic;
 using System.Linq;
+using JetBrains.Annotations;
 
 namespace MonoBehaviorInh.EditorScripts
 {
@@ -12,13 +13,25 @@ namespace MonoBehaviorInh.EditorScripts
         [SerializeField] private RectTransform _catParts2 = null;
         private List<Image> _partsImages = new List<Image>();
         private List<Texture2D> _partsTextures = new List<Texture2D>();
+        private Dictionary<string, RectTransform> _stripsAndSpotsRectTransforms;
+        private readonly PlayerAvatar.Parts[] StripsAndSpotsPartNames =
+        {
+            PlayerAvatar.Parts.StripsS, PlayerAvatar.Parts.StripsM, PlayerAvatar.Parts.StripsL,
+            PlayerAvatar.Parts.SpotsS, PlayerAvatar.Parts.SpotsM, PlayerAvatar.Parts.SpotsL, PlayerAvatar.Parts.SpotsLe
+        };
 
+
+        private void Start()
+        {
+            _stripsAndSpotsRectTransforms = CatPainter.Painter.StripsAndSpotsRectTransforms;
+        }
+        [UsedImplicitly]
         public void SaveCatImage()
         {
             CatStorage.Storage.Player.CatImage = BlendImages();
+            SaveSibling();
         }
-
-        public Texture2D BlendImages()
+        private Texture2D BlendImages()
         {
             FillPartImagesAndTexturesLists();
             Color[] lowerPixels = _partsTextures[0].GetPixels();
@@ -38,7 +51,6 @@ namespace MonoBehaviorInh.EditorScripts
             result.Apply();
             return result;
         }
-
         private void FillPartImagesAndTexturesLists()
         {
             foreach (Transform child in _catParts1)
@@ -54,15 +66,21 @@ namespace MonoBehaviorInh.EditorScripts
                 _partsTextures.Add((Texture2D)partsImage.mainTexture);
             }
         }
-
-        float BlendSubpixel(float top, float bottom, float alphaTop, float alphaBottom)
+        private static float BlendSubpixel(float top, float bottom, float alphaTop, float alphaBottom)
         {
             return (top * alphaTop + bottom * alphaBottom * (1 - alphaTop)) / (alphaTop + alphaBottom * (1 - alphaTop));
         }
-
-        Color PerPixelBlendWithAlpha(Color top, Color bottom)
+        private static Color PerPixelBlendWithAlpha(Color top, Color bottom)
         {
             return new Color(BlendSubpixel(top.r, bottom.r, top.a, bottom.a), BlendSubpixel(top.g, bottom.g, top.a, bottom.a), BlendSubpixel(top.b, bottom.b, top.a, bottom.a), top.a + bottom.a * (1 - top.a));
         }
+        private void SaveSibling()
+        {
+            foreach (var e in StripsAndSpotsPartNames)
+            {
+                CatStorage.Storage.Player.PlayerAvatar.Sibling[e] = _stripsAndSpotsRectTransforms[e.ToString()].GetSiblingIndex();
+            }
+        }
+
     }
 }

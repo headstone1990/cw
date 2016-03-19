@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,6 +7,7 @@ namespace MonoBehaviorInh.EditorScripts
 {
     public class CatPainter : MonoBehaviour
     {
+        public static CatPainter Painter { get; private set; }
         #region Объявление и инициализация полей и свойств
 
         // Здесь ссылки на компоненты Image различных частей кота(контур, расцветка различных частей и.т.д.
@@ -15,7 +17,12 @@ namespace MonoBehaviorInh.EditorScripts
         // Здесь ссылки на компонеты RectTransform полосок и пятен на коте. Они необходимы для изменения порядка их наложения.
         private Dictionary<string, RectTransform> _stripsAndSpotsRectTransforms = new Dictionary<string, RectTransform>();
         // Здесь ссылка на экземпляр класса PlayerAvatar, который хранит в себе информацию о внешнем виде кота(например форма морды - широкая, основной окрас - белый, и.т.д.)
-        public PlayerAvatar PlayerAvatar { get; set; }
+        public PlayerAvatar PlayerAvatar { get; private set; }
+
+        public Dictionary<string, RectTransform> StripsAndSpotsRectTransforms
+        {
+            get { return _stripsAndSpotsRectTransforms; }
+        }
 
         #region Объявление вспомогательных переменных и массивов
 
@@ -31,7 +38,7 @@ namespace MonoBehaviorInh.EditorScripts
         #endregion
         #region Вспомогательные массивы стрингов
 
-        private readonly PlayerAvatar.Parts[] FurColorPartNames = 
+        private readonly PlayerAvatar.Parts[] FurColorPartNames =
         {
             PlayerAvatar.Parts.ColorBack, PlayerAvatar.Parts.ColorBackFoot, PlayerAvatar.Parts.ColorBreast, PlayerAvatar.Parts.ColorEars,
             PlayerAvatar.Parts.ColorHose, PlayerAvatar.Parts.ColorMain, PlayerAvatar.Parts.ColorSocks, PlayerAvatar.Parts.ColorTail,
@@ -60,6 +67,7 @@ namespace MonoBehaviorInh.EditorScripts
         //
         private void Awake()
         {
+            Painter = this;
             foreach (Image e in _catPartImagesAray)
             {
                 _catPartImages.Add(e.gameObject.name, e);
@@ -221,7 +229,7 @@ namespace MonoBehaviorInh.EditorScripts
         }
         private string FaceTypeForFurColorAndStripsAndSpotsCalculation()
         {
-            if ((PlayerAvatar.FaceTypes)PlayerAvatar[PlayerAvatar.Parts.FaceType] == PlayerAvatar.FaceTypes.Normal || 
+            if ((PlayerAvatar.FaceTypes)PlayerAvatar[PlayerAvatar.Parts.FaceType] == PlayerAvatar.FaceTypes.Normal ||
                 (PlayerAvatar.FaceTypes)PlayerAvatar[PlayerAvatar.Parts.FaceType] == PlayerAvatar.FaceTypes.Flat)
             {
                 return "NormalOrFlat";
@@ -248,6 +256,8 @@ namespace MonoBehaviorInh.EditorScripts
                 _catPartImages[part.ToString()].sprite = _blankSprite;
             }
         }
+
+        [UsedImplicitly]
         public void Default()
         {
 
@@ -264,13 +274,6 @@ namespace MonoBehaviorInh.EditorScripts
             PlayerAvatar[PlayerAvatar.Parts.EyesType] = PlayerAvatar.EyesTypes.Normal3;
             DrawShapeAndShadow();
             DrawEyesType();
-        }
-        public void SaveSibling()
-        {
-            foreach (PlayerAvatar.Parts e in StripsAndSpotsPartNames)
-            {
-                PlayerAvatar.Sibling[e] = _stripsAndSpotsRectTransforms[e.ToString()].GetSiblingIndex();
-            }
         }
         #endregion
     }
