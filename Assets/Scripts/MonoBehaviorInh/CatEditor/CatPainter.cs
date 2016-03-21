@@ -3,7 +3,7 @@ using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace MonoBehaviorInh.EditorScripts
+namespace MonoBehaviorInh.CatEditor
 {
     public class CatPainter : MonoBehaviour
     {
@@ -64,7 +64,6 @@ namespace MonoBehaviorInh.EditorScripts
 
         #endregion Объявление и инициализация полей и свойств
 
-        //
         private void Awake()
         {
             Painter = this;
@@ -116,7 +115,7 @@ namespace MonoBehaviorInh.EditorScripts
         {
             if ((PlayerAvatar.EyesColors)PlayerAvatar[PlayerAvatar.Parts.EyesColor] == PlayerAvatar.EyesColors.None)
             {
-                DoBlank("EyesColor");
+                SetBlankSprite("EyesColor");
             }
             else
             {
@@ -128,7 +127,7 @@ namespace MonoBehaviorInh.EditorScripts
         {
             if ((PlayerAvatar.EarsAndNoses)PlayerAvatar[PlayerAvatar.Parts.Ears] == PlayerAvatar.EarsAndNoses.None)
             {
-                DoBlank("Ears");
+                SetBlankSprite("Ears");
             }
             else
             {
@@ -140,7 +139,7 @@ namespace MonoBehaviorInh.EditorScripts
         {
             if ((PlayerAvatar.EarsAndNoses)PlayerAvatar[PlayerAvatar.Parts.Nose] == PlayerAvatar.EarsAndNoses.None)
             {
-                DoBlank("Nose");
+                SetBlankSprite("Nose");
             }
             else
             {
@@ -152,7 +151,7 @@ namespace MonoBehaviorInh.EditorScripts
         {
             if ((PlayerAvatar.FurColorsAndStripsAndSpots)PlayerAvatar[partName] == PlayerAvatar.FurColorsAndStripsAndSpots.None)
             {
-                DoBlank(partName);
+                SetBlankSprite(partName);
             }
             else
             {
@@ -164,7 +163,7 @@ namespace MonoBehaviorInh.EditorScripts
         {
             if ((PlayerAvatar.FurColorsAndStripsAndSpots)PlayerAvatar[partName] == PlayerAvatar.FurColorsAndStripsAndSpots.None)
             {
-                DoBlank(partName);
+                SetBlankSprite(partName);
             }
             else
             {
@@ -242,23 +241,22 @@ namespace MonoBehaviorInh.EditorScripts
         {
             _stripsAndSpotsRectTransforms[partName].SetAsLastSibling();
         }
-        private void DoBlank(string part)
+        private void SetBlankSprite(string part)
         {
             if (_catPartImages[part].sprite != _blankSprite)
             {
                 _catPartImages[part].sprite = _blankSprite;
             }
         }
-        private void DoBlank(PlayerAvatar.Parts part)
+        private void SetBlankSprite(PlayerAvatar.Parts part)
         {
             if (_catPartImages[part.ToString()].sprite != _blankSprite)
             {
                 _catPartImages[part.ToString()].sprite = _blankSprite;
             }
         }
-
         [UsedImplicitly]
-        public void Default()
+        public void SetDefaultPartState()
         {
 
             foreach (PlayerAvatar.Parts e in ArrayForDefaultFurColorsAndStripsAndSpots)

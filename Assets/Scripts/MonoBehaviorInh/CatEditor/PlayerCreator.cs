@@ -2,7 +2,7 @@
 using UnityEngine;
 using UserExceptions;
 
-namespace MonoBehaviorInh.EditorScripts
+namespace MonoBehaviorInh.CatEditor
 {
     public class PlayerCreator : MonoBehaviour {
         private CatStorage _catStorage;

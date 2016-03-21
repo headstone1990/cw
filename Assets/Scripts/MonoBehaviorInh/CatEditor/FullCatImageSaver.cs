@@ -2,9 +2,8 @@
 using UnityEngine.UI;
 using System.Collections.Generic;
 using System.Linq;
-using JetBrains.Annotations;
 
-namespace MonoBehaviorInh.EditorScripts
+namespace MonoBehaviorInh.CatEditor
 {
     public class FullCatImageSaver : MonoBehaviour
     {
@@ -25,7 +24,6 @@ namespace MonoBehaviorInh.EditorScripts
         {
             _stripsAndSpotsRectTransforms = CatPainter.Painter.StripsAndSpotsRectTransforms;
         }
-        [UsedImplicitly]
         public void SaveCatImage()
         {
             CatStorage.Storage.Player.CatImage = BlendImages();

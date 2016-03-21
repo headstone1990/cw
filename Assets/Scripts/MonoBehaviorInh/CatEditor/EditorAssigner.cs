@@ -1,7 +1,8 @@
-﻿using System;
+﻿using MonoBehaviorInh.CatEditor;
+using System;
 using UnityEngine;
 
-namespace MonoBehaviorInh.EditorScripts
+namespace MonoBehaviorInh.CatEditor
 {
     public class EditorAssigner : MonoBehaviour
     {

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEditor;
 
-namespace MonoBehaviorInh.EditorScripts.Editor
+namespace MonoBehaviorInh.CatEditor.Editor
 {
     [CustomEditor(typeof(EditorAssigner))]
     [CanEditMultipleObjects]
