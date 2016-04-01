@@ -1,7 +1,7 @@
 ﻿public enum Traits
 {
-    GoodHearted = 1,
-    NotGoodHearted,
+    Goodhearted = 1,
+    NotGoodhearted,
     Good,
     NotGood,
     Sociable,
@@ -24,6 +24,6 @@
     NotClever,
     Gentle,
     NotGentle,
-    HardWorking,
-    NotHardWorking
+    Hardworking,
+    NotHardworking
 }

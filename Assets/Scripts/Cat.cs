@@ -1,14 +1,18 @@
-﻿using UnityEngine;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 public class Cat
 {
-    private Characteristics _characteristics = new Characteristics();
     private List<Traits> _traits = new List<Traits>();
+
+    public Cat()
+    {
+        Characteristics = new Characteristics();
+    }
 
 
     public string Name { get; set; }
-    public bool Gender { get; set; }
+    public bool IsMale { get; set; }
     public int Age { get; set; }
     public string Tribe { get; set; }
     public int MoonInTribe { get; set; }
@@ -18,12 +22,8 @@ public class Cat
     // WarriorSkill[] warriorSkills;
     // Item[] items;
     public Texture2D Avatar { get; set; }
-    public Characteristics Characteristics
-    {
-        get { return _characteristics; }
+    public Characteristics Characteristics { get; set; }
 
-        set { _characteristics = value; }
-    }
     public List<Traits> Traits
     {
         get
