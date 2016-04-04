@@ -304,7 +304,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967039
+    m_Bits: 32
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -321,7 +321,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1101623210}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -861, y: 0, z: -219}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -403,7 +403,8 @@ GameObject:
   - 20: {fileID: 1567252934}
   - 124: {fileID: 1567252937}
   - 92: {fileID: 1567252936}
-  - 81: {fileID: 1567252935}
+  - 114: {fileID: 1567252939}
+  - 114: {fileID: 1567252935}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -445,13 +446,19 @@ Camera:
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
   m_StereoMirrorMode: 0
---- !u!81 &1567252935
-AudioListener:
+--- !u!114 &1567252935
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1567252933}
-  m_Enabled: 1
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7512dc111ce948943a85a3260da4285a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 1000
+  _camera: {fileID: 1567252938}
 --- !u!92 &1567252936
 Behaviour:
   m_ObjectHideFlags: 0
@@ -473,11 +480,27 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1567252933}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -781, y: 0, z: -219}
+  m_LocalPosition: {x: 0, y: 0, z: -99}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!114 &1567252939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1567252933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee91e829fe754004f94f11956488df1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 1000
+  _camera: {fileID: 1567252938}
+  _staticSprite: {fileID: 1831038821}
+  _dynamicSprite: {fileID: 1569259553}
+  Distance: 3840
 --- !u!1 &1569259551
 GameObject:
   m_ObjectHideFlags: 0
@@ -531,7 +554,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1569259551}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3861, y: 0, z: 0}
+  m_LocalPosition: {x: 3840, y: -5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
