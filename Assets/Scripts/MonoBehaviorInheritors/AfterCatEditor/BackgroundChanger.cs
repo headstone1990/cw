@@ -16,6 +16,19 @@ namespace MonoBehaviorInheritors.AfterCatEditor
             _currentSpriteIndex = 0;
         }
 
+        private void Update()
+        {
+            if (Input.GetButtonDown("Left Button"))
+            {
+                ScrollLeft();
+                return;
+            }
+            if (Input.GetButtonDown("Right Button"))
+            {
+                ScrollRight();
+            }
+        }
+
         [UsedImplicitly]
         public void ScrollRight()
         {

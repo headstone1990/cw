@@ -24,13 +24,11 @@ namespace MonoBehaviorInheritors.AfterCatEditor
                 uiElement.SetActive(false);
             }
             yield return new WaitForEndOfFrame();
-            if (!Directory.Exists(Application.dataPath + "/Screenshots"))
+            if (!Directory.Exists(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/CW"))
             {
-                Directory.CreateDirectory(Application.dataPath + "/Screenshots");
+                Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/CW");
             }
-            var filePath = string.Format("{0}/Screenshots/{1}-{2}-{3} {4}.{5}.{6}.png", Application.dataPath,
-                DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, DateTime.Now.Hour, DateTime.Now.Minute,
-                DateTime.Now.Second);
+            var filePath = string.Format("{0}/{1}.png", Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/CW", DateTime.Now.ToString("yyyy_MM_dd_hh-mm-ss"));
             Application.CaptureScreenshot(filePath);
             foreach (var element in _switchableUiElements)
             {
