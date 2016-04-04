@@ -1,13 +1,9 @@
 fileFormatVersion: 2
-guid: 67364b21b3c90e147bb0c31f80a9ea12
-timeCreated: 1459595351
+guid: 59d04c68bf89f834294aca2dfe01b7f4
+timeCreated: 1443055460
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: 12345_0
-    21300002: 12345_1
-    21300004: 12345_2
-    21300006: 12345_3
+  fileIDToRecycleName: {}
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -23,7 +19,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-  isReadable: 0
+  isReadable: 1
   grayScaleToAlpha: 0
   generateCubemap: 0
   cubemapConvolution: 0
@@ -31,64 +27,39 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 8192
+  maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: 0
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 1
-  spriteMode: 2
+  allowsAlphaSplitting: 0
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 1
+  spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 5
   buildTargetSettings:
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: 12
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
   - buildTarget: Android
     maxTextureSize: 2048
-    textureFormat: -1
+    textureFormat: 13
     compressionQuality: 50
-    allowsAlphaSplitting: 1
+    allowsAlphaSplitting: 0
   spriteSheet:
-    sprites:
-    - name: 12345_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 3840
-        height: 1080
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -1920, y: 540}
-        - {x: -1920, y: -540}
-        - {x: 1920, y: -540}
-        - {x: 1920, y: 540}
-    - name: 12345_1
-      rect:
-        serializedVersion: 2
-        x: 3840
-        y: 0
-        width: 3840
-        height: 1080
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -1920, y: 540}
-        - {x: -1920, y: -540}
-        - {x: 1920, y: -540}
-        - {x: 1920, y: 540}
+    sprites: []
     outline: []
   spritePackingTag: 
   userData: 
