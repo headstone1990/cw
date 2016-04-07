@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace MonoBehaviorInheritors.SuperPanorama
+namespace MonoBehaviorInheritors.Panorama
 {
     public class PanoramaController : MonoBehaviour
     {
