@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Interfaces;
+using UnityEngine;
 using UnityEngine.EventSystems;
 
 namespace MonoBehaviorInheritors.Panorama
@@ -24,9 +25,9 @@ namespace MonoBehaviorInheritors.Panorama
             _ray = _camera.ScreenPointToRay(new Vector3(x, y, 0));
             RaycastHit2D hit = Physics2D.Raycast(_ray.origin, _ray.direction, 1000f);
 
-            if (hit.collider != null)
+            if (hit.collider != null && pointerEventData.button == PointerEventData.InputButton.Left)
             {
-                Debug.Log(hit.collider.name);
+                hit.collider.GetComponent<IInterectable>().LeftMouseButtonClick();
             }
         }
 
