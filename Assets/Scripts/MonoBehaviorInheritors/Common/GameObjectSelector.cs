@@ -6,7 +6,8 @@ namespace MonoBehaviorInh.Common
 {
     public class GameObjectSelector : MonoBehaviour
     {
-        [SerializeField] EventSystem _eventSystem;
+        [SerializeField] private EventSystem _eventSystem;
+        [SerializeField] private GameObject _defaultGameObject;
 
         private void Update()
         {
@@ -14,7 +15,7 @@ namespace MonoBehaviorInh.Common
             {
                 if (Input.GetButtonDown("Horizontal") || Input.GetButtonDown("Vertical"))
                 {
-                    _eventSystem.SetSelectedGameObject(_eventSystem.firstSelectedGameObject);
+                    _eventSystem.SetSelectedGameObject(_defaultGameObject);
                 }
 
             }

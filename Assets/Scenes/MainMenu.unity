@@ -732,6 +732,10 @@ Prefab:
       propertyPath: m_Navigation.m_SelectOnLeft
       value: 
       objectReference: {fileID: 791650485}
+    - target: {fileID: 11417370, guid: 55ba9fa0dec6e9a46bab9c6abcf867fe, type: 2}
+      propertyPath: _eventSystem
+      value: 
+      objectReference: {fileID: 1283449464}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 55ba9fa0dec6e9a46bab9c6abcf867fe, type: 2}
   m_IsPrefabParent: 0
@@ -1252,6 +1256,10 @@ Prefab:
       propertyPath: m_Navigation.m_SelectOnRight
       value: 
       objectReference: {fileID: 122662236}
+    - target: {fileID: 11417370, guid: 55ba9fa0dec6e9a46bab9c6abcf867fe, type: 2}
+      propertyPath: _eventSystem
+      value: 
+      objectReference: {fileID: 1283449464}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 55ba9fa0dec6e9a46bab9c6abcf867fe, type: 2}
   m_IsPrefabParent: 0
@@ -1454,6 +1462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventSystem: {fileID: 1283449464}
+  _defaultGameObject: {fileID: 792016741}
 --- !u!4 &1092729620
 Transform:
   m_ObjectHideFlags: 0
@@ -1514,7 +1523,7 @@ Prefab:
     - target: {fileID: 11454684, guid: a6dacd3e4f5028e4598da2826f578228, type: 2}
       propertyPath: m_FirstSelected
       value: 
-      objectReference: {fileID: 792016741}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a6dacd3e4f5028e4598da2826f578228, type: 2}
   m_IsPrefabParent: 0
@@ -3214,6 +3223,10 @@ Prefab:
       propertyPath: _onPointerClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 11417370, guid: 55ba9fa0dec6e9a46bab9c6abcf867fe, type: 2}
+      propertyPath: _eventSystem
+      value: 
+      objectReference: {fileID: 1283449464}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 55ba9fa0dec6e9a46bab9c6abcf867fe, type: 2}
   m_IsPrefabParent: 0

@@ -10,13 +10,15 @@ namespace MonoBehaviorInh.Common
     public class CustomButtonContloller : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler, IPointerUpHandler, ISelectHandler, IDeselectHandler, IUpdateSelectedHandler {
         private Animator _animator;
         private AudioSource _audioSource;
-        private bool _isPointerDown;
         [SerializeField]
         private UnityEvent _onPointerClick = null; // Set in inspector
         [SerializeField]
         private AudioClip _enter = null; // Set in inspector
         [SerializeField]
         private AudioClip _down = null; // Set in inspector
+
+        private bool _isMouseEnterPrevios;
+        private bool _isMouseDownPrevios;
 
 
         private void Awake()
@@ -28,10 +30,6 @@ namespace MonoBehaviorInh.Common
         public void OnPointerEnter(PointerEventData eventData)
         {
             _animator.SetBool("IsMouseEnter", true);
-            if (_isPointerDown == false)
-            {
-                _audioSource.PlayOneShot(_enter);
-            }
 
         }
         public void OnPointerExit(PointerEventData eventData)
@@ -41,24 +39,17 @@ namespace MonoBehaviorInh.Common
         }
         public void OnPointerDown(PointerEventData eventData)
         {
-            _animator.SetBool("isMouseDown", true);
-            _isPointerDown = true;
-            _audioSource.PlayOneShot(_down);
+            _animator.SetBool("IsMouseDown", true);
         }
         public void OnPointerUp(PointerEventData eventData)
         {
-            _animator.SetBool("isMouseDown", false);
-            _isPointerDown = false;
+            _animator.SetBool("IsMouseDown", false);
             _onPointerClick.Invoke();
         }
 
         public void OnSelect(BaseEventData eventData)
         {
             _animator.SetBool("IsMouseEnter", true);
-            if (_isPointerDown == false)
-            {
-                _audioSource.PlayOneShot(_enter);
-            }
         }
 
         public void OnDeselect(BaseEventData eventData)
@@ -70,16 +61,33 @@ namespace MonoBehaviorInh.Common
         {
             if (Input.GetButtonDown("Submit"))
             {
-                _animator.SetBool("isMouseDown", true);
-                _isPointerDown = true;
-                _audioSource.PlayOneShot(_down);
+                _animator.SetBool("IsMouseDown", true);
             }
             if (Input.GetButtonUp("Submit"))
             {
-                _animator.SetBool("isMouseDown", false);
-                _isPointerDown = false;
+                _animator.SetBool("IsMouseDown", false);
                 _onPointerClick.Invoke();
             }
+        }
+
+        private void Update()
+        {
+            if (_animator.GetBool("IsMouseEnter") != _isMouseEnterPrevios)
+            {
+                if (_animator.GetBool("IsMouseEnter") == true)
+                {
+                    _audioSource.PlayOneShot(_enter);
+                }
+            }
+            if (_animator.GetBool("IsMouseDown") != _isMouseDownPrevios)
+            {
+                if (_animator.GetBool("IsMouseDown") == true)
+                {
+                    _audioSource.PlayOneShot(_down);
+                }
+            }
+            _isMouseEnterPrevios = _animator.GetBool("IsMouseEnter");
+            _isMouseDownPrevios = _animator.GetBool("IsMouseDown");
         }
     }
 }
