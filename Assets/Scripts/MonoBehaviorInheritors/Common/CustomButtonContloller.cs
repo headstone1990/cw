@@ -7,7 +7,7 @@ namespace MonoBehaviorInh.Common
 {
     [RequireComponent(typeof(AudioSource))]
     [RequireComponent(typeof(Animator))]
-    public class CustomButtonContloller : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler, IPointerUpHandler, ISelectHandler, IDeselectHandler, IUpdateSelectedHandler {
+    public class CustomButtonContloller : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler, IPointerUpHandler, ISelectHandler, IDeselectHandler, IUpdateSelectedHandler{
         private Animator _animator;
         private AudioSource _audioSource;
         [SerializeField]
