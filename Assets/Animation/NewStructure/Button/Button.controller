@@ -8,13 +8,13 @@ AnimatorController:
   m_Name: Button
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: IsMouseEnter
+  - m_Name: IsPointerEnter
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: IsMouseDown
+  - m_Name: IsPointerClick
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -62,10 +62,10 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: IsMouseDown
+    m_ConditionEvent: IsPointerClick
     m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: IsMouseEnter
+    m_ConditionEvent: IsPointerEnter
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 110280986}
@@ -89,10 +89,10 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: IsMouseDown
+    m_ConditionEvent: IsPointerClick
     m_EventTreshold: 0
   - m_ConditionMode: 1
-    m_ConditionEvent: IsMouseEnter
+    m_ConditionEvent: IsPointerEnter
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 110253312}
@@ -116,7 +116,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: IsMouseDown
+    m_ConditionEvent: IsPointerClick
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 110278358}
@@ -140,7 +140,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: IsMouseEnter
+    m_ConditionEvent: IsPointerEnter
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 110260650}
@@ -185,7 +185,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: IsMouseEnter
+    m_ConditionEvent: IsPointerEnter
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 110261416}

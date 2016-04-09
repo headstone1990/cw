@@ -9,10 +9,10 @@ TagManager:
   - EscMenu
   - CatStorage
   - Script
-  - asteroid
-  - ship
   - PartImage1
   - PartImage2
+  - PartImage
+  - EventSystem
   layers:
   - Default
   - TransparentFX
