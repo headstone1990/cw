@@ -61,13 +61,6 @@ namespace MonoBehaviorInheritors.Common
             base.OnPointerUp(eventData);
             _animator.SetBool("IsPointerClick", false);
         }
-
-        public override void OnPointerClick(PointerEventData eventData)
-        {
-            _audioSource.PlayOneShot(_click);
-            base.OnPointerClick(eventData);
-        }
-
         public override void OnSelect(BaseEventData eventData)
         {
             base.OnSelect(eventData);
