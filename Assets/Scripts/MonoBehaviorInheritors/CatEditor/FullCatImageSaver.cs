@@ -23,6 +23,7 @@ namespace MonoBehaviorInheritors.CatEditor
         private void Start()
         {
             _stripsAndSpotsRectTransforms = CatPainter.Painter.StripsAndSpotsRectTransforms;
+            //Profiler.maxNumberOfSamplesPerFrame = 8388608;
         }
         public void SaveCatImage()
         {
@@ -32,15 +33,23 @@ namespace MonoBehaviorInheritors.CatEditor
         private Texture2D BlendImages()
         {
             FillPartImagesAndTexturesLists();
+            Color newColor = new Color();
             Color[] lowerPixels = _partsTextures[0].GetPixels();
-            Color[] resultPixels = null;
+            Color[] resultPixels = new Color[lowerPixels.Length];
+            Color[] topPixels = new Color[lowerPixels.Length];
             for (int i = 0; i < _partsTextures.Count - 1; i++)
             {
-                Color[] topPixels = _partsTextures[i + 1].GetPixels();
-                resultPixels = new Color[lowerPixels.Length];
+                topPixels = _partsTextures[i + 1].GetPixels();
                 for (int j = 0; j < resultPixels.Length; j++)
                 {
-                    resultPixels[j] = PerPixelBlendWithAlpha(topPixels[j], lowerPixels[j]);
+                    newColor.r = (topPixels[j].r*topPixels[j].a + lowerPixels[j].r*lowerPixels[j].a*(1 - topPixels[j].a))/
+                                 (topPixels[j].a + lowerPixels[j].a*(1 - topPixels[j].a));
+                    newColor.g = (topPixels[j].g * topPixels[j].a + lowerPixels[j].g * lowerPixels[j].a * (1 - topPixels[j].a)) /
+                                 (topPixels[j].a + lowerPixels[j].a * (1 - topPixels[j].a));
+                    newColor.b = (topPixels[j].b * topPixels[j].a + lowerPixels[j].b * lowerPixels[j].a * (1 - topPixels[j].a)) /
+                                 (topPixels[j].a + lowerPixels[j].a * (1 - topPixels[j].a));
+                    newColor.a = topPixels[j].a + lowerPixels[j].a * (1 - topPixels[j].a);
+                    resultPixels[j] = newColor;
                 }
                 lowerPixels = resultPixels;
             }
