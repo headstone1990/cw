@@ -4,6 +4,7 @@ namespace MonoBehaviorInheritors.Panorama
 {
     public class PanoramaController : MonoBehaviour
     {
+        [SerializeField] private float _speedMultiplier = 3f;
         [SerializeField] private float _speed;
         [SerializeField] private Transform _camera;
         [SerializeField] private Transform _staticSprite;
@@ -17,6 +18,14 @@ namespace MonoBehaviorInheritors.Panorama
 
         void Update()
         {
+            if (Input.GetButtonDown("Speed Up"))
+            {
+                _speed = _speed*_speedMultiplier;
+            }
+            if (Input.GetButtonUp("Speed Up"))
+            {
+                _speed = _speed / _speedMultiplier;
+            }
             _camera.Translate(Input.GetAxis("Horizontal")*_speed*Time.deltaTime, 0, 0);
             if (!_isChildOfDynamicSprite)
             {
