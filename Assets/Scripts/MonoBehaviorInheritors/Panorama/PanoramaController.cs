@@ -12,11 +12,17 @@ namespace MonoBehaviorInheritors.Panorama
 
         private bool _isChildOfDynamicSprite = false;
 
-        private const float LeftPosition = -3840f;
-        private const float RightPosition = 3840f;
+        private float _leftPosition; // = -3840f;
+        private float _rightPosition; // = 3840f;
 
 
-        void Update()
+
+        private void Awake()
+        {
+            _leftPosition = -_staticSprite.GetComponent<SpriteRenderer>().sprite.bounds.size.x;
+            _rightPosition = _staticSprite.GetComponent<SpriteRenderer>().sprite.bounds.size.x;
+        }
+        private void Update()
         {
             if (Input.GetButtonDown("Speed Up"))
             {
@@ -31,13 +37,13 @@ namespace MonoBehaviorInheritors.Panorama
             {
                 if (_camera.localPosition.x < 0)
                 {
-                    _dynamicSprite.position = new Vector3(LeftPosition, _dynamicSprite.position.y);
+                    _dynamicSprite.position = new Vector3(_leftPosition, _dynamicSprite.position.y);
                 }
                 else if (_camera.localPosition.x > 0)
                 {
-                    _dynamicSprite.position = new Vector3(RightPosition, _dynamicSprite.position.y);
+                    _dynamicSprite.position = new Vector3(_rightPosition, _dynamicSprite.position.y);
                 }
-                if (_camera.localPosition.x < LeftPosition / 2 || _camera.position.x > RightPosition/2)
+                if (_camera.localPosition.x < _leftPosition / 2 || _camera.position.x > _rightPosition/2)
                 {
                     _camera.SetParent(_dynamicSprite, true);
                     _isChildOfDynamicSprite = true;
@@ -51,13 +57,13 @@ namespace MonoBehaviorInheritors.Panorama
             {
                 if (_camera.localPosition.x > 0)
                 {
-                    _dynamicSprite.position = new Vector3(LeftPosition, _dynamicSprite.position.y);
+                    _dynamicSprite.position = new Vector3(_leftPosition, _dynamicSprite.position.y);
                 }
                 else if (_camera.localPosition.x < 0)
                 {
-                    _dynamicSprite.position = new Vector3(RightPosition, _dynamicSprite.position.y);
+                    _dynamicSprite.position = new Vector3(_rightPosition, _dynamicSprite.position.y);
                 }
-                if (_camera.localPosition.x < LeftPosition/2 || _camera.localPosition.x > RightPosition/2)
+                if (_camera.localPosition.x < _leftPosition/2 || _camera.localPosition.x > _rightPosition/2)
                 {
                     _camera.SetParent(_staticSprite, true);
                     _isChildOfDynamicSprite = false;
