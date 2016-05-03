@@ -21,9 +21,10 @@ public class TraitSelectEditor : Editor
     {
         serializedObject.Update();
         EditorGUILayout.LabelField("Trait:");
-        EditorGUILayout.TextField(_trait.stringValue);
+        _trait.stringValue = EditorGUILayout.TextField(_trait.stringValue);
         EditorGUILayout.LabelField("Description:");
-        EditorGUILayout.TextArea(_description.stringValue, GUILayout.Height(100f));
+        _description.stringValue = EditorGUILayout.TextArea(_description.stringValue, GUILayout.Height(100f));
+        serializedObject.ApplyModifiedProperties();
         //TraitSelect myTarget = (TraitSelect) target;
         //EditorGUILayout.LabelField("Trait:");
         //myTarget.Trait = EditorGUILayout.TextField(myTarget.Trait);
