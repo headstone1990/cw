@@ -100,13 +100,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afda3da903345e443922f0f40ff27c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trait: "\u0416\u0430\u0434\u043D\u044B\u0439"
-  Description: "+ \u0431\u043E\u043B\u044C\u0448\u0435 \u0448\u0430\u043D\u0441\u043E\u0432
-    \u043D\u0430\u0439\u0442\u0438 \u043F\u0440\u0435\u0434\u043C\u0435\u0442 \u043E\u0431\u044B\u0447\u043D\u043E\u0439
-    \u0440\u0435\u0434\u043A\u043E\u0441\u0442\u0438,\n- \u043C\u0435\u043D\u044C\u0448\u0435
-    \u0448\u0430\u043D\u0441\u043E\u0432 \u0432\u0441\u0442\u0440\u0435\u0442\u0438\u0442\u044C
-    \u041F\u044D\u043D\u044C\u043A\u0443 \u0417\u043E\u043B\u043E\u0442\u0443\u044E
-    \u041B\u0430\u043F\u043A\u0443."
+  _selectedTraitLocalizedString: 
+  _description: 
 --- !u!1 &36616660 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 131026, guid: 283062586c3292c4f930a155486367aa, type: 2}
@@ -122,14 +117,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afda3da903345e443922f0f40ff27c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trait: "\u041D\u0435\u0443\u043A\u043B\u044E\u0436\u0438\u0439"
-  Description: "+ \u0431\u043E\u043B\u044C\u0448\u0435 \u0448\u0430\u043D\u0441\u043E\u0432
-    \u043D\u0430 \u043F\u0440\u043E\u0449\u0435\u043D\u0438\u0435 \u043F\u0440\u0438
-    \u043F\u0440\u043E\u0432\u0430\u043B\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u044F,\n-
-    \u043E\u0442\u043D\u043E\u0448\u0435\u043D\u0438\u0435 \u0441 \u0446\u0435\u043B\u0438\u0442\u0435\u043B\u0435\u043C,
-    \u043D\u0430\u0441\u0442\u0430\u0432\u043D\u0438\u043A\u043E\u043C \u0438 \u043E\u0440\u0443\u0436\u0435\u043D\u043E\u0441\u0446\u0435\u043C
-    \u043D\u0435 \u043F\u043E\u0434\u043D\u0438\u043C\u0430\u0435\u0442\u0441\u044F
-    \u0432\u044B\u0448\u0435 \u043D\u043E\u0440\u043C\u0430\u043B\u044C\u043D\u043E\u0433\u043E."
+  _selectedTraitLocalizedString: 
+  _description: 
 --- !u!1 &79153935 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 131026, guid: 283062586c3292c4f930a155486367aa, type: 2}
@@ -145,8 +134,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afda3da903345e443922f0f40ff27c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trait: "\u0416\u0435\u0441\u0442\u043E\u043A\u0438\u0439"
-  Description: "+ \u043D\u0435 \u0434\u0435\u0439\u0441\u0442\u0432\u0443\u0435\u0442
+  _selectedTraitLocalizedString: "\u0416\u0435\u0441\u0442\u043E\u043A\u0438\u0439"
+  _description: "+ \u043D\u0435 \u0434\u0435\u0439\u0441\u0442\u0432\u0443\u0435\u0442
     \u044D\u0444\u0444\u0435\u043A\u0442 \"\u0423\u0433\u0440\u044B\u0437\u0435\u043D\u0438\u0435
     \u0441\u043E\u0432\u0435\u0441\u0442\u0438\",\n- \u0441\u043B\u043E\u0436\u043D\u0435\u0435
     \u043F\u043E\u0432\u044B\u0441\u0438\u0442\u044C \u0441\u0432\u043E\u044E \u0440\u0435\u043F\u0443\u0442\u0430\u0446\u0438\u044E."
@@ -161,8 +150,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afda3da903345e443922f0f40ff27c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trait: 
-  Description: 
+  _selectedTraitLocalizedString: 
+  _description: 
 --- !u!1001 &79897086
 Prefab:
   m_ObjectHideFlags: 0
@@ -248,7 +237,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 131026, guid: 283062586c3292c4f930a155486367aa, type: 2}
       propertyPath: m_Name
-      value: GoodHearted
+      value: Goodhearted
       objectReference: {fileID: 0}
     - target: {fileID: 11431024, guid: 283062586c3292c4f930a155486367aa, type: 2}
       propertyPath: m_Text
@@ -468,10 +457,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afda3da903345e443922f0f40ff27c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trait: "\u0410\u0437\u0430\u0440\u0442\u043D\u044B\u0439"
-  Description: "+ \u0431\u043E\u043B\u044C\u0448\u0435 \u0434\u0438\u0447\u0438 \u0437\u0430\u043C\u0435\u0442\u043D\u043E
-    \u0432\u043E \u0432\u0440\u0435\u043C\u044F \u043E\u0445\u043E\u0442\u044B,\n-
-    \u0434\u0438\u0447\u044C \u0434\u0432\u0438\u0436\u0435\u0442\u0441\u044F \u0431\u044B\u0441\u0442\u0440\u0435\u0435."
+  _selectedTraitLocalizedString: 
+  _description: 
 --- !u!1001 &103325701
 Prefab:
   m_ObjectHideFlags: 0
@@ -700,7 +687,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 131026, guid: 283062586c3292c4f930a155486367aa, type: 2}
       propertyPath: m_Name
-      value: NotHardWorking
+      value: NotHardworking
       objectReference: {fileID: 0}
     - target: {fileID: 11431026, guid: 283062586c3292c4f930a155486367aa, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -1069,12 +1056,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afda3da903345e443922f0f40ff27c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trait: "\u041D\u0435\u0441\u043E\u043E\u0431\u0440\u0430\u0437\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439"
-  Description: "+ \u0431\u044B\u0441\u0442\u0440\u0435\u0435 \u043F\u043E\u0432\u044B\u0448\u0430\u0435\u0442\u0441\u044F
-    \u0445\u0430\u0440\u0430\u043A\u0442\u0435\u0440\u0438\u0441\u0442\u0438\u043A\u0430
-    \u0441\u0438\u043B\u044B,\n- \u043F\u0440\u0435\u0434\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C
-    \u0438 \u0446\u0435\u043B\u0438\u0442\u0435\u043B\u044C \u0434\u0430\u044E\u0442
-    \u043C\u0435\u043D\u044C\u0448\u0435 \u043F\u043E\u0440\u0443\u0447\u0435\u043D\u0438\u0439."
+  _selectedTraitLocalizedString: 
+  _description: 
 --- !u!1001 &243503984
 Prefab:
   m_ObjectHideFlags: 0
@@ -1696,12 +1679,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afda3da903345e443922f0f40ff27c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trait: "\u041D\u0435\u0436\u043D\u044B\u0439"
-  Description: "+ \u0445\u043E\u0440\u043E\u0448\u0438\u0435 \u043E\u0442\u043D\u043E\u0448\u0435\u043D\u0438\u044F
-    \u0441\u043E \u0432\u0441\u0435\u043C\u0438 \u043A\u043E\u0442\u044F\u0442\u0430\u043C\u0438,
-    \u043A\u043E\u0440\u043E\u043B\u0435\u0432\u0430\u043C\u0438 \u0438 \u0441\u0442\u0430\u0440\u0435\u0439\u0448\u0438\u043D\u0430\u043C\u0438,\n-
-    \u043B\u0435\u0433\u043A\u043E \u043F\u043E\u0440\u0442\u0438\u0442\u0441\u044F
-    \u043D\u0430\u0441\u0442\u0440\u043E\u0435\u043D\u0438\u0435."
+  _selectedTraitLocalizedString: 
+  _description: 
 --- !u!1001 &603192088
 Prefab:
   m_ObjectHideFlags: 0
@@ -2428,15 +2407,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afda3da903345e443922f0f40ff27c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trait: "\u041E\u0434\u0438\u043D\u043E\u0447\u043A\u0430"
-  Description: "+ \u043F\u043E\u0432\u044B\u0448\u0435\u043D\u0438\u0435 \u043D\u0430\u0441\u0442\u0440\u043E\u0435\u043D\u0438\u044F
-    \u043E\u0442 \u0434\u043B\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0433\u043E
-    \u043E\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0438\u044F \u043E\u0431\u0449\u0435\u043D\u0438\u044F,\n+
-    \u043D\u0438\u043A\u0442\u043E \u043D\u0435 \u043E\u0431\u0438\u0436\u0430\u0435\u0442\u0441\u044F
-    \u043D\u0430 \u043E\u0442\u043A\u0430\u0437 \u043E\u0442 \u041B\u0438\u0447\u043D\u044B\u0445
-    \u0437\u0430\u0434\u0430\u043D\u0438\u0439,\n- \u0441\u043B\u043E\u0436\u043D\u043E
-    \u043F\u043E\u0432\u044B\u0441\u0438\u0442\u044C \u0440\u0435\u043F\u0443\u0442\u0430\u0446\u0438\u044E
-    \u0432 \u0441\u043E\u0431\u0441\u0442\u0432\u0435\u043D\u043D\u043E\u043C \u043F\u043B\u0435\u043C\u0435\u043D\u0438."
+  _selectedTraitLocalizedString: 
+  _description: 
 --- !u!1 &821596369
 GameObject:
   m_ObjectHideFlags: 0
@@ -2525,12 +2497,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afda3da903345e443922f0f40ff27c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trait: "\u0414\u043E\u0431\u0440\u044B\u0439"
-  Description: "+ \u043F\u0440\u043E\u0449\u0435 \u0441\u0442\u0430\u0442\u044C \u0446\u0435\u043B\u0438\u0442\u0435\u043B\u0435\u043C,\n-
+  _selectedTraitLocalizedString: "\u0414\u043E\u0431\u0440\u044B\u0439"
+  _description: "+ \u043F\u0440\u043E\u0449\u0435 \u0441\u0442\u0430\u0442\u044C \u0446\u0435\u043B\u0438\u0442\u0435\u043B\u0435\u043C,\n-
     \u0435\u0441\u043B\u0438 \u0437\u0430\u043C\u044B\u0448\u043B\u044F\u0435\u0448\u044C
     \u043F\u0440\u0435\u0434\u0430\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u043E
     \u0438\u043B\u0438 \u0443\u0431\u0438\u0439\u0441\u0442\u0432\u043E, \u0434\u0435\u0439\u0441\u0442\u0432\u0443\u0435\u0442
-    \u044D\u0444\u0444\u0435\u043A\u0442\"\u0423\u0433\u0440\u044B\u0437\u0435\u043D\u0438\u0435
+    \u044D\u0444\u0444\u0435\u043A\u0442 \"\u0423\u0433\u0440\u044B\u0437\u0435\u043D\u0438\u0435
     \u0441\u043E\u0432\u0435\u0441\u0442\u0438\""
 --- !u!1001 &888926198
 Prefab:
@@ -2755,7 +2727,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 131026, guid: 283062586c3292c4f930a155486367aa, type: 2}
       propertyPath: m_Name
-      value: NotGoodHearted
+      value: NotGoodhearted
       objectReference: {fileID: 0}
     - target: {fileID: 11431026, guid: 283062586c3292c4f930a155486367aa, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -2848,9 +2820,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab561cb521a59e14ebd8dfcb139179fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DescriptionObj: {fileID: 1410968112}
-  TitleObj: {fileID: 398817439}
-  TraitField:
+  _description: {fileID: 1410968112}
+  _title: {fileID: 398817439}
+  _traitFields:
   - {fileID: 392766734}
   - {fileID: 1025450815}
   - {fileID: 787242586}
@@ -2871,10 +2843,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afda3da903345e443922f0f40ff27c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trait: "\u0423\u0433\u0440\u044E\u043C\u044B\u0439"
-  Description: "+ \u043D\u0435\u0442 \u0448\u0430\u043B\u043E\u0441\u0442\u0435\u0439
-    \u043E\u0442 \u043A\u043E\u0442\u044F\u0442,\n- \u043D\u0435 \u043C\u043E\u0436\u0435\u0442
-    \u0440\u0430\u0437\u0432\u0435\u0441\u0435\u043B\u0438\u0442\u044C \u0441\u043E\u0431\u0435\u0441\u0435\u0434\u043D\u0438\u043A\u0430."
+  _selectedTraitLocalizedString: 
+  _description: 
 --- !u!1 &974887915 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 131026, guid: 283062586c3292c4f930a155486367aa, type: 2}
@@ -2890,11 +2860,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afda3da903345e443922f0f40ff27c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trait: "\u041D\u0435 \u0436\u0434\u0443\u0449\u0438\u0439 \u0432\u043B\u0430\u0441\u0442\u0438"
-  Description: "+ \u0445\u043E\u0440\u043E\u0448\u0438\u0435 \u043E\u0442\u043D\u043E\u0448\u0435\u043D\u0438\u044F
-    \u0441 \u043F\u0440\u0435\u0434\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u0435\u043C,\n-
-    \u043D\u0430\u0432\u044B\u043A\u0438 \u043F\u043E\u0432\u044B\u0448\u0430\u044E\u0442\u0441\u044F
-    \u043C\u0435\u0434\u043B\u0435\u043D\u043D\u0435\u0435."
+  _selectedTraitLocalizedString: 
+  _description: 
 --- !u!1001 &1020055224
 Prefab:
   m_ObjectHideFlags: 0
@@ -3465,16 +3432,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afda3da903345e443922f0f40ff27c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trait: "\u041E\u0431\u0449\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439"
-  Description: "+ \u043F\u0440\u043E\u0449\u0435 \u043F\u043E\u0432\u044B\u0441\u0438\u0442\u044C
-    \u0440\u0435\u043F\u0443\u0442\u0430\u0446\u0438\u044E \u0432 \u0441\u043E\u0431\u0441\u0442\u0432\u0435\u043D\u043D\u043E\u043C
-    \u043F\u043B\u0435\u043C\u0435\u043D\u0438,\n+ \u043F\u043E\u0432\u044B\u0448\u0435\u043D\u0438\u0435
-    \u043D\u0430\u0441\u0442\u0440\u043E\u0435\u043D\u0438\u044F \u043F\u0440\u0438
-    \u043E\u0431\u0449\u0435\u043D\u0438\u0438 \u0438 \u0432\u044B\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u0438
-    \u041B\u0438\u0447\u043D\u044B\u0445 \u0437\u0430\u0434\u0430\u043D\u0438\u0439,\n-
-    \u043F\u043E\u043D\u0438\u0436\u0435\u043D\u0438\u0435 \u043D\u0430\u0441\u0442\u0440\u043E\u0435\u043D\u0438\u044F
-    \u043E\u0442 \u0434\u043B\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0433\u043E
-    \u043E\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0438\u044F \u043E\u0431\u0449\u0435\u043D\u0438\u044F."
+  _selectedTraitLocalizedString: 
+  _description: 
 --- !u!1001 &1180969971
 Prefab:
   m_ObjectHideFlags: 0
@@ -3605,10 +3564,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afda3da903345e443922f0f40ff27c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trait: "\u041B\u0435\u043D\u0438\u0432\u044B\u0439"
-  Description: "+ \u043D\u0435\u0442 \u0441\u043B\u0443\u0447\u0430\u0439\u043D\u044B\u0445
-    \u0437\u0430\u0434\u0430\u043D\u0438\u0439,\n- \u043F\u043B\u043E\u0445\u043E\u0435
-    \u043E\u0442\u043D\u043E\u0448\u0435\u043D\u0438\u0435 \u0441 \u043D\u0430\u0441\u0442\u0430\u0432\u043D\u0438\u043A\u043E\u043C/\u043E\u0440\u0443\u0436\u0435\u043D\u043E\u0441\u0446\u0435\u043C."
+  _selectedTraitLocalizedString: 
+  _description: 
 --- !u!1001 &1202648886
 Prefab:
   m_ObjectHideFlags: 0
@@ -3758,12 +3715,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afda3da903345e443922f0f40ff27c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trait: "\u0413\u0440\u0443\u0431\u044B\u0439"
-  Description: "+ \u0440\u0435\u0436\u0435 \u043F\u043E\u0440\u0442\u0438\u0442\u0441\u044F
-    \u043D\u0430\u0441\u0442\u0440\u043E\u0435\u043D\u0438\u0435,\n- \u0441\u043B\u043E\u0436\u043D\u043E
-    \u0437\u0430\u0441\u043B\u0443\u0436\u0438\u0442\u044C \u0434\u043E\u0432\u0435\u0440\u0438\u0435
-    \u043A\u043E\u0442\u044F\u0442, \u043A\u043E\u0440\u043E\u043B\u0435\u0432 \u0438
-    \u0441\u0442\u0430\u0440\u0435\u0439\u0448\u0438\u043D."
+  _selectedTraitLocalizedString: 
+  _description: 
 --- !u!1 &1410968110
 GameObject:
   m_ObjectHideFlags: 0
@@ -3852,15 +3805,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afda3da903345e443922f0f40ff27c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trait: "\u0429\u0435\u0434\u0440\u044B\u0439"
-  Description: "+ \u043E\u0431\u043C\u0435\u043D \u0443 \u041F\u044D\u043D\u044C\u043A\u0438
-    \u0417\u043E\u043B\u043E\u0442\u043E\u0439 \u041B\u0430\u043F\u043A\u0438 \u0441\u0442\u043E\u0438\u0442
-    \u0434\u0435\u0448\u0435\u0432\u043B\u0435,\n+ \u0431\u043E\u043B\u044C\u0448\u0435
-    \u0448\u0430\u043D\u0441\u043E\u0432 \u0432\u0441\u0442\u0440\u0435\u0442\u0438\u0442\u044C
-    \u041F\u044D\u043D\u044C\u043A\u0443,\n- \u043C\u0435\u043D\u044C\u0448\u0435
-    \u0440\u0435\u0441\u0443\u0440\u0441\u043E\u0432 \u0434\u0430\u0451\u0442\u0441\u044F
-    \u0432 \u0432\u043E\u0437\u043D\u0430\u0433\u0440\u0430\u0436\u0434\u0435\u043D\u0438\u0435
-    \u0437\u0430 \u0437\u0430\u0434\u0430\u043D\u0438\u044F."
+  _selectedTraitLocalizedString: 
+  _description: 
 --- !u!1001 &1458414224
 Prefab:
   m_ObjectHideFlags: 0
@@ -3980,6 +3926,48 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c50d28bf073a4b148987800c3d7394b1, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &1488102311
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 481600, guid: bf0712d5496ce334497f7e3f4a27cb96, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 481600, guid: bf0712d5496ce334497f7e3f4a27cb96, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 481600, guid: bf0712d5496ce334497f7e3f4a27cb96, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 481600, guid: bf0712d5496ce334497f7e3f4a27cb96, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 481600, guid: bf0712d5496ce334497f7e3f4a27cb96, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 481600, guid: bf0712d5496ce334497f7e3f4a27cb96, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 481600, guid: bf0712d5496ce334497f7e3f4a27cb96, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 481600, guid: bf0712d5496ce334497f7e3f4a27cb96, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: bf0712d5496ce334497f7e3f4a27cb96, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1520046596 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 131026, guid: 283062586c3292c4f930a155486367aa, type: 2}
@@ -3995,15 +3983,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afda3da903345e443922f0f40ff27c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trait: "\u0412\u0435\u0440\u044F\u0449\u0438\u0439"
-  Description: "+ \u0445\u043E\u0440\u043E\u0448\u0438\u0435 \u043E\u0442\u043D\u043E\u0448\u0435\u043D\u0438\u044F
-    \u0441\u043E \u0417\u0432\u0451\u0437\u0434\u043D\u044B\u043C \u043F\u043B\u0435\u043C\u0435\u043D\u0435\u043C,\n-
-    \u0438\u0437 \u0442\u0430\u043A\u043E\u0433\u043E \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u0436\u0430
-    \u043F\u043E\u043B\u0443\u0447\u0430\u0435\u0442\u0441\u044F \u0431\u043E\u043B\u0435\u0435
-    \u0445\u043E\u0440\u043E\u0448\u0438\u0439 \u0446\u0435\u043B\u0438\u0442\u0435\u043B\u044C,\n-
-    \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044F \u0431\u043E\u043B\u044C\u0448\u0435
-    \u043D\u0430 1 \u0447\u0430\u0441 \u0432\u0440\u0435\u043C\u0435\u043D\u0438 \u043D\u0430
-    \u0441\u043E\u043D."
+  _selectedTraitLocalizedString: 
+  _description: 
 --- !u!1 &1537826839 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 131026, guid: 283062586c3292c4f930a155486367aa, type: 2}
@@ -4019,14 +4000,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afda3da903345e443922f0f40ff27c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trait: "\u041F\u0430\u0441\u0441\u0438\u0432\u043D\u044B\u0439"
-  Description: "+ \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044F \u043D\u0430
-    3 \u0435\u0434\u0438\u043D\u0438\u0446\u044B \u043C\u0435\u043D\u044C\u0448\u0435
-    \u0435\u0434\u044B \u0434\u043B\u044F \u043D\u0430\u0441\u044B\u0449\u0435\u043D\u0438\u044F,\n-
-    \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044F \u043D\u0430 1 \u0435\u0434\u0438\u043D\u0438\u0446\u0443
-    \u0431\u043E\u043B\u044C\u0448\u0435 \u044D\u043D\u0435\u0440\u0433\u0438\u0438
-    \u0434\u043B\u044F \u043E\u0445\u043E\u0442\u044B, \u0440\u044B\u0431\u0430\u043B\u043A\u0438
-    \u0438 \u0441\u0440\u0430\u0436\u0435\u043D\u0438\u0439"
+  _selectedTraitLocalizedString: 
+  _description: 
 --- !u!1001 &1548420982
 Prefab:
   m_ObjectHideFlags: 0
@@ -4316,13 +4291,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afda3da903345e443922f0f40ff27c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trait: "\u0410\u043A\u0442\u0438\u0432\u043D\u044B\u0439"
-  Description: "+ \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044F \u0432 1,5-2
-    \u0440\u0430\u0437\u0430 \u043C\u0435\u043D\u044C\u0448\u0435 \u044D\u043D\u0435\u0440\u0433\u0438\u0438
-    \u0434\u043B\u044F \u043E\u0445\u043E\u0442\u044B, \u0440\u044B\u0431\u0430\u043B\u043A\u0438
-    \u0438 \u0441\u0440\u0430\u0436\u0435\u043D\u0438\u0439,\n- \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044F
-    \u043D\u0430 3 \u0435\u0434\u0438\u043D\u0438\u0446\u044B \u0431\u043E\u043B\u044C\u0448\u0435
-    \u0435\u0434\u044B \u0434\u043B\u044F \u043D\u0430\u0441\u044B\u0449\u0435\u043D\u0438\u044F."
+  _selectedTraitLocalizedString: 
+  _description: 
 --- !u!1 &1622710361 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 131026, guid: 283062586c3292c4f930a155486367aa, type: 2}
@@ -4338,16 +4308,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afda3da903345e443922f0f40ff27c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trait: "\u0410\u043A\u043A\u0443\u0440\u0430\u0442\u043D\u044B\u0439"
-  Description: "+ \u0438\u0437\u043D\u0430\u0447\u0430\u043B\u044C\u043D\u043E \u0445\u043E\u0440\u043E\u0448\u0435\u0435
-    \u043E\u0442\u043D\u043E\u0448\u0435\u043D\u0438\u0435 \u0441 \u0446\u0435\u043B\u0438\u0442\u0435\u043B\u0435\u043C,
-    \u043D\u0430\u0441\u0442\u0430\u0432\u043D\u0438\u043A\u043E\u043C \u0438 \u043E\u0440\u0443\u0436\u0435\u043D\u043E\u0441\u0446\u0435\u043C,\n+
-    \u043E\u0442\u043D\u043E\u0448\u0435\u043D\u0438\u0435 \u0441 \u0446\u0435\u043B\u0438\u0442\u0435\u043B\u0435\u043C,
-    \u043D\u0430\u0441\u0442\u0430\u0432\u043D\u0438\u043A\u043E\u043C \u0438 \u043E\u0440\u0443\u0436\u0435\u043D\u043E\u0441\u0446\u0435\u043C
-    \u043D\u0435 \u043F\u0430\u0434\u0430\u0435\u0442 \u043D\u0438\u0436\u0435 \u043D\u0435\u0439\u0442\u0440\u0430\u043B\u044C\u043D\u043E\u0433\u043E,\n-
-    \u043C\u0435\u043D\u044C\u0448\u0435 \u0448\u0430\u043D\u0441\u043E\u0432 \u043D\u0430
-    \u043F\u0440\u043E\u0449\u0435\u043D\u0438\u0435 \u043F\u0440\u0438 \u043F\u0440\u043E\u0432\u0430\u043B\u0435
-    \u0437\u0430\u0434\u0430\u043D\u0438\u044F."
+  _selectedTraitLocalizedString: 
+  _description: 
 --- !u!1 &1636148092 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 131026, guid: 283062586c3292c4f930a155486367aa, type: 2}
@@ -4363,11 +4325,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afda3da903345e443922f0f40ff27c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trait: "\u0421\u043A\u0435\u043F\u0442\u0438\u043A"
-  Description: "+ \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044F \u043C\u0435\u043D\u044C\u0448\u0435
-    \u043D\u0430 1 \u0447\u0430\u0441 \u0432\u0440\u0435\u043C\u0435\u043D\u0438 \u043D\u0430
-    \u0441\u043E\u043D,\n- \u043F\u043B\u043E\u0445\u0438\u0435 \u043E\u0442\u043D\u043E\u0448\u0435\u043D\u0438\u044F
-    \u0441\u043E \u0417\u0432\u0451\u0437\u0434\u043D\u044B\u043C \u043F\u043B\u0435\u043C\u0435\u043D\u0435\u043C."
+  _selectedTraitLocalizedString: 
+  _description: 
 --- !u!1 &1649423755
 GameObject:
   m_ObjectHideFlags: 0
@@ -4503,8 +4462,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afda3da903345e443922f0f40ff27c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trait: "\u0414\u043E\u0431\u0440\u043E\u0441\u0435\u0440\u0434\u0435\u0447\u043D\u044B\u0439"
-  Description: "+ \u043F\u0440\u043E\u0449\u0435 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C
+  _selectedTraitLocalizedString: "\u0414\u043E\u0431\u0440\u043E\u0441\u0435\u0440\u0434\u0435\u0447\u043D\u044B\u0439"
+  _description: "+ \u043F\u0440\u043E\u0449\u0435 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C
     \u0434\u043E\u0432\u0435\u0440\u0438\u0435,\n+ \u043F\u0440\u043E\u0449\u0435
     \u0434\u043E\u0431\u0438\u0442\u044C\u0441\u044F \u0445\u043E\u0440\u043E\u0448\u0438\u0445
     \u043E\u0442\u043D\u043E\u0448\u0435\u043D\u0438\u0439 \u0441 \u0434\u043E\u043C\u0430\u0448\u043D\u0438\u043C\u0438
@@ -4512,19 +4471,6 @@ MonoBehaviour:
     \u0443\u0431\u0438\u0432\u0430\u0435\u0448\u044C \u043A\u043E\u0442\u0430, \u0434\u0435\u0439\u0441\u0442\u0432\u0443\u0435\u0442
     \u044D\u0444\u0444\u0435\u043A\u0442 \"\u0421\u043B\u043E\u043C\u043B\u0435\u043D
     \u0434\u0443\u0445\u043E\u043C.\""
---- !u!114 &1683896054
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1683896048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afda3da903345e443922f0f40ff27c29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Trait: 
-  Description: 
 --- !u!1001 &1732855818
 Prefab:
   m_ObjectHideFlags: 0
@@ -4734,7 +4680,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 131026, guid: 283062586c3292c4f930a155486367aa, type: 2}
       propertyPath: m_Name
-      value: HardWorking
+      value: Hardworking
       objectReference: {fileID: 0}
     - target: {fileID: 11431026, guid: 283062586c3292c4f930a155486367aa, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -4913,15 +4859,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afda3da903345e443922f0f40ff27c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trait: "\u0422\u0440\u0443\u0434\u043E\u043B\u044E\u0431\u0438\u0432\u044B\u0439"
-  Description: "+ \u043F\u0440\u0438 \u043E\u043F\u043E\u0437\u0434\u0430\u043D\u0438\u0438
-    \u043D\u0430 \u0442\u0440\u0435\u043D\u0438\u0440\u043E\u0432\u043A\u0443 \u043D\u0435
-    \u043F\u043E\u0440\u0442\u0438\u0442\u0441\u044F \u043E\u0442\u043D\u043E\u0448\u0435\u043D\u0438\u0435
-    \u0441 \u043D\u0430\u0441\u0442\u0430\u0432\u043D\u0438\u043A\u043E\u043C/\u043E\u0440\u0443\u0436\u0435\u043D\u043E\u0441\u0446\u0435\u043C,\n+
-    \u0431\u043E\u043B\u0435\u0435 \u0432\u043D\u0438\u043C\u0430\u0442\u0435\u043B\u044C\u043D\u044B\u0439
-    \u0432\u043E \u0432\u0440\u0435\u043C\u044F \u0442\u0440\u0435\u043D\u0438\u0440\u043E\u0432\u043E\u043A,\n-
-    \u0447\u0430\u0449\u0435 \u043F\u0440\u043E\u0441\u044F\u0442 \u0432\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C
-    \u041E\u0431\u0449\u0438\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u044F."
+  _selectedTraitLocalizedString: 
+  _description: 
 --- !u!1001 &1865217970
 Prefab:
   m_ObjectHideFlags: 0
@@ -5467,8 +5406,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afda3da903345e443922f0f40ff27c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trait: "\u0417\u043B\u043E\u0439"
-  Description: "+ \u043D\u0438\u043A\u043E\u0433\u0434\u0430 \u043D\u0435 \u0434\u0435\u0439\u0441\u0442\u0432\u0443\u0435\u0442
+  _selectedTraitLocalizedString: "\u0417\u043B\u043E\u0439"
+  _description: "+ \u043D\u0438\u043A\u043E\u0433\u0434\u0430 \u043D\u0435 \u0434\u0435\u0439\u0441\u0442\u0432\u0443\u0435\u0442
     \u044D\u0444\u0444\u0435\u043A\u0442 \"\u0423\u0433\u0440\u044B\u0437\u0435\u043D\u0438\u0435
     \u0441\u043E\u0432\u0435\u0441\u0442\u0438\",\n- \u0441\u043B\u043E\u0436\u043D\u043E
     \u0437\u0430\u0441\u043B\u0443\u0436\u0438\u0442\u044C \u0434\u043E\u0432\u0435\u0440\u0438\u0435
@@ -5742,11 +5681,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afda3da903345e443922f0f40ff27c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trait: "\u041C\u0435\u0434\u043B\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439"
-  Description: "+ \u0434\u0438\u0447\u044C \u0434\u0432\u0438\u0436\u0435\u0442\u0441\u044F
-    \u043C\u0435\u0434\u043B\u0435\u043D\u043D\u0435\u0435,\n- \u043C\u0435\u043D\u044C\u0448\u0435
-    \u0434\u0438\u0447\u0438 \u0437\u0430\u043C\u0435\u0442\u043D\u043E \u0432\u043E
-    \u0432\u0440\u0435\u043C\u044F \u043E\u0445\u043E\u0442\u044B."
+  _selectedTraitLocalizedString: 
+  _description: 
 --- !u!1001 &1997560292
 Prefab:
   m_ObjectHideFlags: 0
@@ -5896,12 +5832,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afda3da903345e443922f0f40ff27c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trait: "\u0412\u0435\u0441\u0435\u043B\u044C\u0447\u0430\u043A"
-  Description: "+ \u043F\u043E\u0434\u043D\u0438\u043C\u0430\u0435\u0442 \u043D\u0430\u0441\u0442\u0440\u043E\u0435\u043D\u0438\u0435
-    \u0441\u043E\u0431\u0435\u0441\u0435\u0434\u043D\u0438\u043A\u0430 \u043D\u0430
-    1 \u043F\u0443\u043D\u043A\u0442,\n- \u043F\u0440\u0438\u0445\u043E\u0434\u0438\u0442\u0441\u044F
-    \u0442\u0435\u0440\u043F\u0435\u0442\u044C \u0431\u043E\u043B\u044C\u0448\u0435
-    \u0448\u0430\u043B\u043E\u0441\u0442\u0435\u0439 \u043E\u0442 \u043A\u043E\u0442\u044F\u0442."
+  _selectedTraitLocalizedString: 
+  _description: 
 --- !u!1 &2063347984 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 131026, guid: 283062586c3292c4f930a155486367aa, type: 2}
@@ -5917,11 +5849,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afda3da903345e443922f0f40ff27c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trait: "\u0410\u043C\u0431\u0438\u0446\u0438\u043E\u0437\u043D\u044B\u0439"
-  Description: "+ \u043D\u0430\u0432\u044B\u043A\u0438 \u043F\u043E\u0432\u044B\u0448\u0430\u044E\u0442\u0441\u044F
-    \u0431\u044B\u0441\u0442\u0440\u0435\u0435,\n- \u0441\u043B\u043E\u0436\u043D\u043E
-    \u0437\u0430\u0441\u043B\u0443\u0436\u0438\u0442\u044C \u0434\u043E\u0432\u0435\u0440\u0438\u0435
-    \u043F\u0440\u0435\u0434\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044F."
+  _selectedTraitLocalizedString: 
+  _description: 
 --- !u!1001 &2067394528
 Prefab:
   m_ObjectHideFlags: 0
@@ -6205,14 +6134,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afda3da903345e443922f0f40ff27c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trait: "\u0423\u043C\u043D\u044B\u0439"
-  Description: "+ \u0431\u043E\u043B\u044C\u0448\u0435 \u0434\u043E\u0432\u0435\u0440\u0438\u044F
-    \u043E\u0442 \u043F\u0440\u0435\u0434\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044F,
-    \u0441\u0442\u0430\u0440\u0435\u0439\u0448\u0438\u043D \u0438 \u0446\u0435\u043B\u0438\u0442\u0435\u043B\u044F,\n-
-    \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044F \u0431\u043E\u043B\u044C\u0448\u0435
-    \u0432\u0440\u0435\u043C\u0435\u043D\u0438 \u0434\u043B\u044F \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u0438\u044F
-    \u0445\u0430\u0440\u0430\u043A\u0442\u0435\u0440\u0438\u0441\u0442\u0438\u043A\u0438
-    \u0441\u0438\u043B\u044B."
+  _selectedTraitLocalizedString: 
+  _description: 
 --- !u!1001 &2110552625
 Prefab:
   m_ObjectHideFlags: 0
