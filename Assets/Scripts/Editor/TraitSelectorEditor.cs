@@ -2,30 +2,30 @@
 using UnityEditor;
 using System.Collections;
 
-[CustomEditor(typeof(TraitSelect))]
+[CustomEditor(typeof(TraitSelector))]
 [CanEditMultipleObjects]
-public class TraitSelectEditor : Editor
+public class TraitSelectorEditor : Editor
 {
 
-    private SerializedProperty _trait;
+    private SerializedProperty _selectedTraitLocalizedString;
     private SerializedProperty _description;
 
 
     void OnEnable()
     {
-        _trait = serializedObject.FindProperty("Trait");
-        _description = serializedObject.FindProperty("Description");
+        _selectedTraitLocalizedString = serializedObject.FindProperty("_selectedTraitLocalizedString");
+        _description = serializedObject.FindProperty("_description");
     }
 
     public override void OnInspectorGUI()
     {
         serializedObject.Update();
         EditorGUILayout.LabelField("Trait:");
-        _trait.stringValue = EditorGUILayout.TextField(_trait.stringValue);
+        _selectedTraitLocalizedString.stringValue = EditorGUILayout.TextField(_selectedTraitLocalizedString.stringValue);
         EditorGUILayout.LabelField("Description:");
         _description.stringValue = EditorGUILayout.TextArea(_description.stringValue, GUILayout.Height(100f));
         serializedObject.ApplyModifiedProperties();
-        //TraitSelect myTarget = (TraitSelect) target;
+        //TraitSelector myTarget = (TraitSelector) target;
         //EditorGUILayout.LabelField("Trait:");
         //myTarget.Trait = EditorGUILayout.TextField(myTarget.Trait);
         //EditorGUILayout.LabelField("Description:");

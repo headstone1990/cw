@@ -212,7 +212,7 @@ public class Presets : MonoBehaviour {
             GlobalVariables.nose = "black";
             GlobalVariables.colorMain = "black";
         }
-        
+
     }
 
 }
