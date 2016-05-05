@@ -15,9 +15,11 @@ EditorBuildSettings:
     path: Assets/Scenes/New game/About.unity
   - enabled: 1
     path: Assets/Scenes/New game/CatEditor.unity
+  - enabled: 1
+    path: Assets/Scenes/New game/TraitsSelection.unity
   - enabled: 0
     path: Assets/Scenes/TestScene.unity
   - enabled: 0
     path: Assets/Scenes/test.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/New game/AfterCatEditor.unity

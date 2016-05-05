@@ -8659,7 +8659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ef18b82c5214be48a6a269d76fd613d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _loadedScene: AfterCatEditor
+  _loadedScene: TraitsSelection
 --- !u!114 &389049444
 MonoBehaviour:
   m_ObjectHideFlags: 0
