@@ -1,5 +1,6 @@
 ﻿using MonoBehaviorInh;
 using MonoBehaviorInheritors;
+using MonoBehaviorInheritors.TraitsSelection;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -347,6 +348,7 @@ public class TraitSelectorController : MonoBehaviour
                     if (string.IsNullOrEmpty(e.text))
                     {
                         e.text = _selectedTraitLocalizedString;
+                        e.GetComponent<SelectedTraitStorage>().SelectedTrait = _selectedTrait;
                         break;
                     }
                 }
@@ -357,11 +359,11 @@ public class TraitSelectorController : MonoBehaviour
             _description.text = "Нельзя выбрать больше 5 черт характера";
         }
     }
-//    public void Cancel(Text i)
-//    {
-//        _player.Traits.Remove(ConvertWithReturn(i.text));
-//        i.text = null;
-//    }
+    public void Cancel(Text i)
+    {
+        _player.Traits.Remove(i.GetComponent<SelectedTraitStorage>().SelectedTrait);
+        i.text = null;
+    }
 
 
 }
