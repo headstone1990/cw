@@ -1,24 +1,47 @@
 ﻿using UnityEngine;
 
-namespace MonoBehaviorInheritors.Panorama
+namespace MonoBehaviorInheritors.Main
 {
-    public class PanoramaController : MonoBehaviour
+    public class PanoramaScrollController : MonoBehaviour
     {
         [SerializeField] private float _speedMultiplier = 3f;
         [SerializeField] private float _speed;
-        [SerializeField] private Transform _camera;
         [SerializeField] private Transform _staticSprite;
         [SerializeField] private Transform _dynamicSprite;
-
+        private Transform _camera;
         private bool _isChildOfDynamicSprite = false;
 
         private float _leftPosition; // = -3840f;
         private float _rightPosition; // = 3840f;
 
+        public Transform StaticSprite
+        {
+            get
+            {
+                return _staticSprite;
+            }
 
+            set
+            {
+                _staticSprite = value;
+            }
+        }
+        public Transform DynamicSprite
+        {
+            get
+            {
+                return _dynamicSprite;
+            }
+
+            set
+            {
+                _dynamicSprite = value;
+            }
+        }
 
         private void Awake()
         {
+            _camera = transform;
             _leftPosition = -_staticSprite.GetComponent<SpriteRenderer>().sprite.bounds.size.x;
             _rightPosition = _staticSprite.GetComponent<SpriteRenderer>().sprite.bounds.size.x;
         }
