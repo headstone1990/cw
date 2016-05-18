@@ -14,8 +14,8 @@ public class Cat
     public string Name { get; set; }
     public bool IsMale { get; set; }
     public int Age { get; set; }
-    public string Tribe { get; set; }
-    public int MoonInTribe { get; set; }
+    public string Clan { get; set; }
+    public int MoonInClan { get; set; }
     public string Rang { get; set; }
 
 

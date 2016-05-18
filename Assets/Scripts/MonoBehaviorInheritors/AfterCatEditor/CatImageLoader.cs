@@ -7,7 +7,7 @@ namespace MonoBehaviorInheritors.AfterCatEditor
     {
         private void Start()
         {
-            GetComponent<Image>().sprite = Sprite.Create(CatStorage.Storage.Player.CatImage, new Rect(0, 0, 1000, 600), new Vector2(0.5f, 0.5f));
+            GetComponent<Image>().sprite = Sprite.Create(CatStorage.Instance.Player.Avatar, new Rect(0, 0, 1000, 600), new Vector2(0.5f, 0.5f));
         }
     }
 }

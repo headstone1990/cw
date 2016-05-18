@@ -8,7 +8,7 @@ namespace MonoBehaviorInheritors.Main
         {
             Vector3 defaultCameraPosition = new Vector3(-9.6f, 0f, -99f);
             PanoramaScrollController panoramaScrollController = GetComponentInChildren<PanoramaScrollController>();
-            Transform cameraTransform = transform.Find("PanoramaCamera");
+            Transform cameraTransform = transform.Find("PanoramaCamera(Clone)");
             Transform firstSprite = transform.Find("FirstSprite");
             Transform secondSprite = transform.Find("SecondSprite");
             panoramaScrollController.StaticSprite = firstSprite;

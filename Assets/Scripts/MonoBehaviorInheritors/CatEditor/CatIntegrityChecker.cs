@@ -13,7 +13,7 @@ namespace MonoBehaviorInh.CatEditor
 
         private void Start()
         {
-            _playerAvatar = CatStorage.Storage.Player.PlayerAvatar;
+            _playerAvatar = CatStorage.Instance.Player.PlayerAvatar;
         }
 
         public bool IsSetValuesForRequiredParts()

@@ -22,7 +22,7 @@ public class TraitSelectorController : MonoBehaviour
 
     private void Awake()
     {
-        _player = CatStorage.Storage.Player;
+        _player = CatStorage.Instance.Player;
     }
 //    private void Convert()
 //    {

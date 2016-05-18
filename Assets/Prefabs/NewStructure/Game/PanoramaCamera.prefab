@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &442804
 Transform:
   m_ObjectHideFlags: 1
@@ -85,7 +85,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speedMultiplier: 3
   _speed: 10
-  _camera: {fileID: 442804}
   _staticSprite: {fileID: 0}
   _dynamicSprite: {fileID: 0}
 --- !u!124 &12481864

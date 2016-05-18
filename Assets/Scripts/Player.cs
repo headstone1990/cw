@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : Cat
 {
     private PlayerAvatar _playerAvatar = new PlayerAvatar();
-    
+
 
     public PlayerAvatar PlayerAvatar
     {
@@ -13,5 +13,4 @@ public class Player : Cat
         set { _playerAvatar = value; }
     }
 
-    public Texture2D CatImage { get; set; }
 }

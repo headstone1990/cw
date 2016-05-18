@@ -81,7 +81,7 @@ namespace MonoBehaviorInheritors.CatEditor
             {
                 _assets.Add(e.name, e);
             }
-            PlayerAvatar = CatStorage.Storage.Player.PlayerAvatar;
+            PlayerAvatar = CatStorage.Instance.Player.PlayerAvatar;
             DrawShapeAndShadow();
             DrawEyesType();
         }

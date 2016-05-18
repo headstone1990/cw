@@ -27,7 +27,7 @@ namespace MonoBehaviorInheritors.CatEditor
         }
         public void SaveCatImage()
         {
-            CatStorage.Storage.Player.CatImage = BlendImages();
+            CatStorage.Instance.Player.Avatar = BlendImages();
             SaveSibling();
         }
         private Texture2D BlendImages()
@@ -85,7 +85,7 @@ namespace MonoBehaviorInheritors.CatEditor
         {
             foreach (var e in StripsAndSpotsPartNames)
             {
-                CatStorage.Storage.Player.PlayerAvatar.Sibling[e] = _stripsAndSpotsRectTransforms[e.ToString()].GetSiblingIndex();
+                CatStorage.Instance.Player.PlayerAvatar.Sibling[e] = _stripsAndSpotsRectTransforms[e.ToString()].GetSiblingIndex();
             }
         }
 

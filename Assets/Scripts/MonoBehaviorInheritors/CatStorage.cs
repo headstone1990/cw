@@ -6,18 +6,18 @@ namespace MonoBehaviorInheritors
     public class CatStorage : MonoBehaviour
     {
         public Player Player { get; private set; }
-        public static CatStorage Storage { get; private set; }
+        public static CatStorage Instance { get; private set; }
 
 
         private void Awake()
         {
 
-            if (Storage == null)
+            if (Instance == null)
             {
                 DontDestroyOnLoad(gameObject);
-                Storage = this;
+                Instance = this;
             }
-            else if(Storage != this)
+            else if(Instance != this)
             {
                 Destroy(gameObject);
             }

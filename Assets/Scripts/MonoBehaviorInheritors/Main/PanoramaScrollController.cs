@@ -39,7 +39,7 @@ namespace MonoBehaviorInheritors.Main
             }
         }
 
-        private void Awake()
+        private void Start()
         {
             _camera = transform;
             _leftPosition = -_staticSprite.GetComponent<SpriteRenderer>().sprite.bounds.size.x;
