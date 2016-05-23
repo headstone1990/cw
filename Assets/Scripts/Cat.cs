@@ -1,9 +1,11 @@
 ﻿using System.Collections.Generic;
+using DefaultNamespace;
 using UnityEngine;
 
 public class Cat
 {
     private List<Traits> _traits = new List<Traits>();
+    private IngameTime _birthday;
 
     public Cat()
     {
@@ -13,10 +15,17 @@ public class Cat
 
     public string Name { get; set; }
     public bool IsMale { get; set; }
-    public int Age { get; set; }
+
+    public IngameTimeInterval Age
+    {
+        get { return TimeController.Instance.CurrentTime - _birthday; }
+    }
+
     public string Clan { get; set; }
     public int MoonInClan { get; set; }
     public string Rang { get; set; }
+
+
 
 
     // WarriorSkill[] warriorSkills;
@@ -35,5 +44,10 @@ public class Cat
         {
             _traits = value;
         }
+    }
+
+    public IngameTime DebugBirthdaySetter
+    {
+        set { _birthday = value; }
     }
 }

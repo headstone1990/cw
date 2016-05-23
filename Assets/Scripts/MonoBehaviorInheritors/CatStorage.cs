@@ -9,6 +9,7 @@ namespace MonoBehaviorInheritors
         public static CatStorage Instance { get; private set; }
 
 
+
         private void Awake()
         {
 

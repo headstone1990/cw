@@ -1,5 +1,22 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &122744
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 451756}
+  - 60: {fileID: 6007426}
+  - 114: {fileID: 11488568}
+  m_Layer: 8
+  m_Name: Object
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &171534
 GameObject:
   m_ObjectHideFlags: 0
@@ -63,6 +80,18 @@ Transform:
   - {fileID: 494776}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!4 &451756
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 122744}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -12.46, y: -3.45, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 469910}
+  m_RootOrder: 0
 --- !u!4 &469910
 Transform:
   m_ObjectHideFlags: 1
@@ -72,7 +101,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 451756}
   m_Father: {fileID: 442806}
   m_RootOrder: 0
 --- !u!4 &494776
@@ -87,6 +117,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 442806}
   m_RootOrder: 1
+--- !u!60 &6007426
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 122744}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: -0.023525238, y: 1.3528748}
+      - {x: 0.60182285, y: 1.3283327}
+      - {x: 3.9387283, y: 0.68541646}
+      - {x: 5.5213223, y: -0.35629082}
+      - {x: 4.4197264, y: -2.029021}
+      - {x: 2.7882128, y: -0.77948785}
+      - {x: 0.49368477, y: -1.8911655}
+      - {x: -3.4107828, y: -1.5853412}
+      - {x: -5.53876, y: -0.33835316}
+      - {x: -1.6332798, y: 1.2029662}
 --- !u!95 &9508866
 Animator:
   serializedVersion: 3
@@ -113,6 +167,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db31cba00dcc7c04a98b38c62c8e97e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11488568
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 122744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512ad50374029fa4daa907af71e2b835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &21268578

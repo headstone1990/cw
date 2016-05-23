@@ -1,43 +1,96 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 
 namespace DefaultNamespace
 {
-    public class IngameTime
+    public struct IngameTime
     {
-        private int _minute;
-        private int _hour;
-        private int _day = 1;
+        private const int MinutesPerHour = 60;
+        private const int MinutesPerDay = MinutesPerHour * 24;
+        private const int DaysPerMoon = 30;
+        private ulong _internalMinutes;
 
-        public void AddTime(int minuts)
+        public enum Seasons
         {
-            _minute += minuts;
-            RecalculateTime();
+            Winter = 0,
+            Spring = 1,
+            Summer = 2,
+            Autumn = 3
+        }
+        public enum MoonsOfYear
+        {
+            January = 0,
+            February,
+            March,
+            April,
+            May,
+            June,
+            July,
+            August,
+            September,
+            October,
+            November,
+            December = -1
         }
 
-        public void AddTime(int hours, int minuts)
+        public int Minute
         {
-            _minute += minuts;
-            _hour += hours;
-            RecalculateTime();
+            get { return (int) (_internalMinutes % 60); }
         }
 
-        private void RecalculateTime()
+        public int Hour
         {
-            if (_minute >= 60)
+            get { return (int)((_internalMinutes / MinutesPerHour) % 24); }
+        }
+
+        public int Day
+        {
+            get
             {
-                _hour = _hour + _minute / 60;
-                _minute = _minute % 60;
-            }
-            if (_hour >= 24)
-            {
-                _day = _day + _hour / 24;
-                _hour = _hour % 24;
+                if ((_internalMinutes / MinutesPerDay) % 30 == 0)
+                {
+                    return 30;
+                }
+                return (int) ((_internalMinutes/MinutesPerDay)%30);
             }
         }
 
-        public string ShowTime()
+        public int Moon
         {
-            return _day + " day " +  _hour + " hour " + _minute + " minute ";
+            get { return (int) (_internalMinutes/(MinutesPerDay*DaysPerMoon)); }
         }
+        public Seasons Season
+        {
+            get { return (Seasons) (_internalMinutes / (MinutesPerDay * DaysPerMoon * 3) % 4); }
+        }
+
+        public MoonsOfYear MoonOfYear
+        {
+            get { return (MoonsOfYear)((_internalMinutes/(MinutesPerDay*DaysPerMoon) % 12) - 1); }
+        }
+
+
+
+        public IngameTime(ulong moons, ulong days, ulong hours, ulong minutes)
+        {
+            _internalMinutes = moons * DaysPerMoon* MinutesPerDay + days * MinutesPerDay + hours * MinutesPerHour + minutes;
+        }
+
+        public static IngameTimeInterval operator -(IngameTime a, IngameTime b)
+        {
+            return new IngameTimeInterval(a._internalMinutes - b._internalMinutes);
+        }
+
+        public static IngameTime operator -(IngameTime a, IngameTimeInterval b)
+        {
+            return new IngameTime(0, 0, 0, a._internalMinutes - b.InternalMinutes);
+        }
+
+        public static IngameTime operator +(IngameTime a, IngameTimeInterval b)
+        {
+            return new IngameTime(0, 0, 0, a._internalMinutes + b.InternalMinutes);
+        }
+
+
     }
 }

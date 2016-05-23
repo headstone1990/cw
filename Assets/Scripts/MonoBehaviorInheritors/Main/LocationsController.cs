@@ -17,7 +17,7 @@ namespace MonoBehaviorInheritors.Main
             {
                 _locations[i] = new Location(_panoramaPrefabs[i].name);
             }
-            CurrentLocation = ReturnLocationByName("Meadow");
+            CurrentLocation = ReturnLocationByName("ThunderClanCamp");
             GameObject instantiatedLocation = Instantiate(ReturnLocationPrefab(CurrentLocation));
             GameObject panoramaCamera = Instantiate(_panoramaCameraPrefab);
             panoramaCamera.transform.SetParent(instantiatedLocation.transform);

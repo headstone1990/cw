@@ -1,4 +1,5 @@
-﻿public class Characteristics
+﻿[System.Serializable]
+public class Characteristics
 {
     public int Strength { get; set; }
     public int Agility { get; set; }

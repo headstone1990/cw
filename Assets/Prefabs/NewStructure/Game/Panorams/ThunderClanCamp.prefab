@@ -25,6 +25,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 472708}
   - 114: {fileID: 11455774}
+  - 95: {fileID: 9583674}
   m_Layer: 0
   m_Name: ThunderClanCamp
   m_TagString: Untagged
@@ -86,6 +87,23 @@ Transform:
   - {fileID: 440852}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!95 &9583674
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 132570}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11455774
 MonoBehaviour:
   m_ObjectHideFlags: 1

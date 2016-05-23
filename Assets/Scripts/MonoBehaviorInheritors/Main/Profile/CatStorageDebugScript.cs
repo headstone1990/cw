@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using DefaultNamespace;
+using UnityEngine;
 
 namespace MonoBehaviorInheritors.Main.Profile
 {
@@ -17,8 +19,10 @@ namespace MonoBehaviorInheritors.Main.Profile
         [Range(0, 100)] [SerializeField] private int _look;
         [Range(0, 100)] [SerializeField] private int _popularity;
         [SerializeField] private Texture2D _avatar;
+        [Range(1, 1003)] [SerializeField] private int _moonOfBirthday;
+        [Range(1, 30)] [SerializeField] private int _dayOfBirthday;
 
-        private void Start()
+        private void Awake()
         {
             _player = CatStorage.Instance.Player;
             _player.Name = _name;
@@ -32,6 +36,7 @@ namespace MonoBehaviorInheritors.Main.Profile
             _player.Characteristics.Look = _look;
             _player.Characteristics.Popularity = _popularity;
             _player.Avatar = _avatar;
+            _player.DebugBirthdaySetter = new IngameTime((ulong)_moonOfBirthday, (ulong)_dayOfBirthday, 0, 0);
         }
     }
 }
