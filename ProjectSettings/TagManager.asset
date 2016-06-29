@@ -13,6 +13,9 @@ TagManager:
   - PartImage2
   - PartImage
   - EventSystem
+  - LooseBorder
+  - StrongStreamBorder
+  - Obstacle
   layers:
   - Default
   - TransparentFX
