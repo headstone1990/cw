@@ -35,6 +35,7 @@ public class FieldsValueLoader : MonoBehaviour
         foreach (Slider slider in _sliders)
         {
             slider.value = (int)_player.Characteristics.GetType().GetProperty(slider.name).GetValue(_player.Characteristics, null);
+            slider.GetComponentInChildren<Text>().text = string.Format("{0}/100", (int)_player.Characteristics.GetType().GetProperty(slider.name).GetValue(_player.Characteristics, null));
         }
     }
 
@@ -53,8 +54,43 @@ public class FieldsValueLoader : MonoBehaviour
     private void TextFieldValueAssign()
     {
         _name.text = _player.Name;
-        _age.text = string.Format("{0} moons {1} days", _player.Age.Moon, _player.Age.Day);
+        _age.text = string.Format("{0} {1} {2} {3}", _player.Age.Moon, MoonStringDeclension, _player.Age.Day, DayStringDeclension);
         _rang.text = _player.Rang;
         _clan.text = _player.Clan;
+    }
+
+    private string MoonStringDeclension
+    {
+        get
+        {
+            if (_player.Age.Moon > 10 && _player.Age.Moon < 20)
+            {
+                return "лун";
+            }
+            int lastDigit = _player.Age.Moon%10;
+            if (lastDigit == 0 || lastDigit > 4)
+            {
+                return "лун";
+            }
+            return lastDigit == 1 ? "луна" : "луны";
+        }
+    }
+
+    private string DayStringDeclension
+    {
+        get
+        {
+            if (_player.Age.Day > 10 && _player.Age.Day < 20)
+            {
+                return "дней";
+            }
+            int lastDigit = _player.Age.Day % 10;
+            if (lastDigit == 0 || lastDigit > 4)
+            {
+                return "дней";
+            }
+
+            return lastDigit == 1 ? "день" : "дня";
+        }
     }
 }
