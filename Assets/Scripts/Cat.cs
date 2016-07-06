@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using DefaultNamespace;
 using UnityEngine;
+using MonoBehaviorInheritors.Main;
 
 public class Cat
 {

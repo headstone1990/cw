@@ -2,32 +2,34 @@
 using UnityEngine;
 using System.Collections;
 using DefaultNamespace;
-
-public class TimeController : MonoBehaviour
+namespace MonoBehaviorInheritors.Main
 {
-    public static TimeController Instance { get; private set; }
+	public class TimeController : MonoBehaviour
+	{
+	    public static TimeController Instance { get; private set; }
 
-    public IngameTime CurrentTime
-    {
-        get { return _currentTime; }
-    }
+	    public IngameTime CurrentTime
+	    {
+	        get { return _currentTime; }
+	    }
 
-    private IngameTime _currentTime = new IngameTime(1004, 1, 0, 0);
+	    private IngameTime _currentTime = new IngameTime(1004, 1, 0, 0);
 
-    private void Awake()
-    {
-        Instance = this;
-    }
-    private void Start()
-    {
+	    private void Awake()
+	    {
+	        Instance = this;
+	    }
+	    private void Start()
+	    {
 
-        //string s = String.Format("Сейчас {0} день {1} луны, {2}:{3}  {4}  {5}", test.Day, test.Moon, test.Hour, test.Minute, test.Season, test.MoonOfYear);
-        //string s = String.Format("Прошло {0} лун {1} дней, {2}:{3}", test.Moon, test.Day, test.Hour, test.Minute);
-        //Debug.Log(s);
-    }
+	        //string s = String.Format("Сейчас {0} день {1} луны, {2}:{3}  {4}  {5}", test.Day, test.Moon, test.Hour, test.Minute, test.Season, test.MoonOfYear);
+	        //string s = String.Format("Прошло {0} лун {1} дней, {2}:{3}", test.Moon, test.Day, test.Hour, test.Minute);
+	        //Debug.Log(s);
+	    }
 
-    public void AddTime(IngameTimeInterval time)
-    {
-        _currentTime = CurrentTime + time;
-    }
+	    public void AddTime(IngameTimeInterval time)
+	    {
+	        _currentTime = CurrentTime + time;
+	    }
+	}
 }
