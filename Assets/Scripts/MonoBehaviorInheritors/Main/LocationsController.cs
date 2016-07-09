@@ -1,5 +1,4 @@
-﻿using MonoBehaviorInheritors.Panorama;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace MonoBehaviorInheritors.Main
 {
@@ -7,6 +6,7 @@ namespace MonoBehaviorInheritors.Main
     {
         [SerializeField] private GameObject[] _panoramaPrefabs;
         [SerializeField] private GameObject _panoramaCameraPrefab;
+        public static GameObject Camera { get; private set; }
         private Location[] _locations;
         public Location CurrentLocation { get; set; }
 
@@ -20,6 +20,7 @@ namespace MonoBehaviorInheritors.Main
             CurrentLocation = ReturnLocationByName("ThunderClanCamp");
             GameObject instantiatedLocation = Instantiate(ReturnLocationPrefab(CurrentLocation));
             GameObject panoramaCamera = Instantiate(_panoramaCameraPrefab);
+            Camera = panoramaCamera;
             panoramaCamera.transform.SetParent(instantiatedLocation.transform);
             instantiatedLocation.GetComponent<PanoramaInitializer>().Initialize();
             instantiatedLocation.GetComponent<Animator>().SetTrigger("FullOpaque");
@@ -48,6 +49,11 @@ namespace MonoBehaviorInheritors.Main
                 }
             }
             return null;
+        }
+
+        public void ChangeLocation()
+        {
+            
         }
 
     }

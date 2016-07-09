@@ -3,13 +3,14 @@ using Interfaces;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace MonoBehaviorInheritors.Panorama
+namespace MonoBehaviorInheritors.Main
 {
     public class EventThrower : MonoBehaviour
     {
         [SerializeField]
         private Camera _camera;
         private bool _mouseOnObject;
+        [SerializeField]
         private RectTransform _rawImage;
         private Ray _ray;
         private Vector2 _coordinatesInRawImage;
@@ -28,11 +29,6 @@ namespace MonoBehaviorInheritors.Panorama
             }
         }
 
-        private void Awake()
-        {
-            _rawImage = GetComponent<RectTransform>();
-        }
-
         public void ThrowOnMouseDown(BaseEventData baseEventData)
         {
             PointerEventData pointerEventData = (PointerEventData) baseEventData;
@@ -42,7 +38,7 @@ namespace MonoBehaviorInheritors.Panorama
             _ray = Camera.ScreenPointToRay(new Vector3(x, y, 0));
             RaycastHit2D hit = Physics2D.Raycast(_ray.origin, _ray.direction, 1000f);
 
-            if (hit.collider != null && pointerEventData.button == PointerEventData.InputButton.Left)
+            if (hit.collider != null && pointerEventData.button == PointerEventData.InputButton.Left && hit.collider.GetComponent<IInteractable>() != null)
             {
                 hit.collider.GetComponent<IInteractable>().OnLeftMouseButtonClick();
             }
@@ -71,8 +67,11 @@ namespace MonoBehaviorInheritors.Panorama
                 {
                     if (_currentSelectedObject == null)
                     {
-                        _currentSelectedObject = hit.collider.GetComponent<IInteractable>();
-                        _currentSelectedObject.OnMouseEnter();
+                        if (hit.collider.GetComponent<IInteractable>() != null)
+                        {
+                            _currentSelectedObject = hit.collider.GetComponent<IInteractable>();
+                            _currentSelectedObject.OnMouseEnter();
+                        }
                     }
                 }
                 else
@@ -90,7 +89,7 @@ namespace MonoBehaviorInheritors.Panorama
 
         private void Update()
         {
-            Debug.DrawRay(_ray.origin, _ray.direction * 10, Color.red);
+            Debug.DrawRay(_ray.origin, _ray.direction * 100, Color.red);
         }
     }
 }

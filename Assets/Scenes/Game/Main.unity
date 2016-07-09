@@ -2616,6 +2616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _camera: {fileID: 0}
+  _rawImage: {fileID: 1522579135}
 --- !u!1 &806288788
 GameObject:
   m_ObjectHideFlags: 0
@@ -2993,7 +2994,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 40}
+  m_SizeDelta: {x: 57.178684, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &922626278
 MonoBehaviour:
@@ -3602,7 +3603,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1078618860
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3784,7 +3785,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1194261254
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4632,7 +4633,6 @@ GameObject:
   - 222: {fileID: 1522579137}
   - 114: {fileID: 1522579136}
   - 114: {fileID: 1522579139}
-  - 114: {fileID: 1522579138}
   m_Layer: 8
   m_Name: Viewport
   m_TagString: Untagged
@@ -4690,18 +4690,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1522579134}
---- !u!114 &1522579138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1522579134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6553710a00319f24193afd21ace13fc6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _camera: {fileID: 0}
 --- !u!114 &1522579139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4718,7 +4706,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1522579138}
+        - m_Target: {fileID: 772252233}
           m_MethodName: ThrowOnMouseDown
           m_Mode: 0
           m_Arguments:
@@ -4735,7 +4723,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1522579138}
+        - m_Target: {fileID: 772252233}
           m_MethodName: ThrowOnMouseEnter
           m_Mode: 1
           m_Arguments:
@@ -4752,7 +4740,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1522579138}
+        - m_Target: {fileID: 772252233}
           m_MethodName: ThrowOnMouseExit
           m_Mode: 1
           m_Arguments:

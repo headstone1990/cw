@@ -33,6 +33,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &167016
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 489974}
+  - 60: {fileID: 6019456}
+  - 114: {fileID: 11404806}
+  m_Layer: 8
+  m_Name: LeadersDen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &171884
 GameObject:
   m_ObjectHideFlags: 0
@@ -58,6 +75,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -38.4, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 472708}
   m_RootOrder: 1
@@ -70,7 +88,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 489974}
   m_Father: {fileID: 472708}
   m_RootOrder: 0
 --- !u!4 &472708
@@ -82,11 +102,53 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 459128}
   - {fileID: 440852}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!4 &489974
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 167016}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.12, y: -0.57, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 459128}
+  m_RootOrder: 0
+--- !u!60 &6019456
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 167016}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: -4.786834, y: 2.899483}
+      - {x: -3.3322458, y: 4.4687386}
+      - {x: -0.15859127, y: 4.77447}
+      - {x: 1.4623947, y: 4.872479}
+      - {x: 2.912746, y: 3.82126}
+      - {x: 3.060594, y: 2.7606223}
+      - {x: 3.6727357, y: 2.1010373}
+      - {x: 5.9953203, y: -0.6465706}
+      - {x: 4.2993326, y: -1.05059}
+      - {x: 2.8625653, y: -2.2805886}
+      - {x: 0.887619, y: -3.243425}
+      - {x: -0.93469, y: -2.7438295}
+      - {x: -3.2838354, y: -3.3147573}
+      - {x: -7.6436024, y: -2.8310878}
 --- !u!95 &9583674
 Animator:
   serializedVersion: 3
@@ -96,7 +158,7 @@ Animator:
   m_GameObject: {fileID: 132570}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3e24237a53f1a4e45a86841b3ef011f9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -104,6 +166,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11404806
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 167016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cb7e3bcbe297e64683956e935182f38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetCameraPosition: {x: 2.8, y: -1.29, z: -99}
+  _targetCameraSize: 2.29
+  _totalLerpingTime: 3
 --- !u!114 &11455774
 MonoBehaviour:
   m_ObjectHideFlags: 1
