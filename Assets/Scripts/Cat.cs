@@ -1,97 +1,50 @@
-﻿using System.Collections.Generic;
-using DefaultNamespace;
-using UnityEngine;
-using MonoBehaviorInheritors.Main;
+﻿#region
 
-public class Cat
+using System.Collections.Generic;
+using MonoBehaviorInheritors.Main;
+using UnityEngine;
+
+#endregion
+
+public abstract class Cat
 {
-    private List<Traits> _traits = new List<Traits>();
     private IngameTime _birthday;
-    private IngameTimeInterval _timeLeftOfCurrentTimeScroll;
+    protected LinkedList<CatsAction> _previosActions = new LinkedList<CatsAction>();
+    private List<Traits> _traits = new List<Traits>();
+
 
     protected Cat()
     {
         Characteristics = new Characteristics();
-        TimeController.Instance.OnTimeScrollStarted += StartTimeScroll;
     }
 
+    public Texture2D Avatar { get; set; }
     public CatsAction CurrentAction { get; set; }
-    public string Name { get; set; }
+    public Characteristics Characteristics { get; set; }
+    public string Clan { get; set; }
     public bool IsMale { get; set; }
+    public int MoonInClan { get; set; }
+    public string Name { get; set; }
+    public string Rang { get; set; }
+
+    public List<Traits> Traits
+    {
+        get { return _traits; }
+
+        set { _traits = value; }
+    }
 
     public IngameTimeInterval Age
     {
         get { return TimeController.Instance.CurrentTime - _birthday; }
     }
 
-    public string Clan { get; set; }
-    public int MoonInClan { get; set; }
-    public string Rang { get; set; }
-
-
-
-
-    // WarriorSkill[] warriorSkills;
-    // Item[] items;
-    public Texture2D Avatar { get; set; }
-    public Characteristics Characteristics { get; set; }
-
-    public List<Traits> Traits
-    {
-        get
-        {
-            return _traits;
-        }
-
-        set
-        {
-            _traits = value;
-        }
-    }
 
     public IngameTime DebugBirthdaySetter
     {
-        set { _birthday = value; }
-    }
-
-    public void StartTimeScroll(IngameTimeInterval duration)
-    {
-        _timeLeftOfCurrentTimeScroll = duration;
-        DoAction();
-    }
-
-    private void DoAction()
-    {
-        while (_timeLeftOfCurrentTimeScroll > 0)
+        set
         {
-            if (CurrentAction != null)
-            {
-                if (CurrentAction.TimeLeft <= _timeLeftOfCurrentTimeScroll)
-                {
-                    _timeLeftOfCurrentTimeScroll -= CurrentAction.TimeLeft;
-                    CurrentAction.TimeLeft = 0;
-                    CurrentAction = null;
-                }
-                else
-                {
-                    CurrentAction.TimeLeft -= _timeLeftOfCurrentTimeScroll;
-                    _timeLeftOfCurrentTimeScroll = 0;
-                }
-            }
-            else
-            {
-                CurrentAction = GenerateNewAction();
-            }
+            _birthday = value;
         }
     }
-
-    private CatsAction GenerateNewAction()
-    {
-        throw new System.NotImplementedException();
-    }
-}
-
-public class CatsAction
-{
-    public IngameTimeInterval TimeLeft { get; set; }
 }
