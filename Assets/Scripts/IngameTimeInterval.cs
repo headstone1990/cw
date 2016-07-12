@@ -36,6 +36,41 @@
             set { _internalMinutes = value; }
         }
 
+        public static implicit operator IngameTimeInterval(int i)
+        {
+            return new IngameTimeInterval((ulong)i);
+        }
+
+        public static bool operator >(IngameTimeInterval a, IngameTimeInterval b)
+        {
+            return a.InternalMinutes > b.InternalMinutes;
+        }
+
+        public static bool operator <(IngameTimeInterval a, IngameTimeInterval b)
+        {
+            return a.InternalMinutes < b.InternalMinutes;
+        }
+
+        public static bool operator >=(IngameTimeInterval a, IngameTimeInterval b)
+        {
+            return a.InternalMinutes >= b.InternalMinutes;
+        }
+
+        public static bool operator <=(IngameTimeInterval a, IngameTimeInterval b)
+        {
+            return a.InternalMinutes <= b.InternalMinutes;
+        }
+
+        public static IngameTimeInterval operator +(IngameTimeInterval a, IngameTimeInterval b)
+        {
+            return new IngameTimeInterval(a.InternalMinutes + b.InternalMinutes);
+        }
+
+        public static IngameTimeInterval operator -(IngameTimeInterval a, IngameTimeInterval b)
+        {
+            return new IngameTimeInterval(a.InternalMinutes - b.InternalMinutes);
+        }
+
         public IngameTimeInterval(ulong minutes)
         {
             _internalMinutes = minutes;

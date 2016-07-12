@@ -4,8 +4,14 @@ using System.Collections;
 using DefaultNamespace;
 namespace MonoBehaviorInheritors.Main
 {
+
+
 	public class TimeController : MonoBehaviour
 	{
+	    public delegate void TimeAddedEventHandler(IngameTimeInterval time);
+
+
+	    public event TimeAddedEventHandler OnTimeScrollStarted;
 	    public static TimeController Instance { get; private set; }
 
 	    public IngameTime CurrentTime
@@ -30,6 +36,7 @@ namespace MonoBehaviorInheritors.Main
 	    public void AddTime(IngameTimeInterval time)
 	    {
 	        _currentTime = CurrentTime + time;
+	        if (OnTimeScrollStarted != null) OnTimeScrollStarted.Invoke(time);
 	    }
 	}
 }

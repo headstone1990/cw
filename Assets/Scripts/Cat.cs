@@ -7,13 +7,15 @@ public class Cat
 {
     private List<Traits> _traits = new List<Traits>();
     private IngameTime _birthday;
+    private IngameTimeInterval _timeLeftOfCurrentTimeScroll;
 
-    public Cat()
+    protected Cat()
     {
         Characteristics = new Characteristics();
+        TimeController.Instance.OnTimeScrollStarted += StartTimeScroll;
     }
 
-
+    public CatsAction CurrentAction { get; set; }
     public string Name { get; set; }
     public bool IsMale { get; set; }
 
@@ -51,4 +53,45 @@ public class Cat
     {
         set { _birthday = value; }
     }
+
+    public void StartTimeScroll(IngameTimeInterval duration)
+    {
+        _timeLeftOfCurrentTimeScroll = duration;
+        DoAction();
+    }
+
+    private void DoAction()
+    {
+        while (_timeLeftOfCurrentTimeScroll > 0)
+        {
+            if (CurrentAction != null)
+            {
+                if (CurrentAction.TimeLeft <= _timeLeftOfCurrentTimeScroll)
+                {
+                    _timeLeftOfCurrentTimeScroll -= CurrentAction.TimeLeft;
+                    CurrentAction.TimeLeft = 0;
+                    CurrentAction = null;
+                }
+                else
+                {
+                    CurrentAction.TimeLeft -= _timeLeftOfCurrentTimeScroll;
+                    _timeLeftOfCurrentTimeScroll = 0;
+                }
+            }
+            else
+            {
+                CurrentAction = GenerateNewAction();
+            }
+        }
+    }
+
+    private CatsAction GenerateNewAction()
+    {
+        throw new System.NotImplementedException();
+    }
+}
+
+public class CatsAction
+{
+    public IngameTimeInterval TimeLeft { get; set; }
 }

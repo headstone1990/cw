@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UserExceptions;
 
-namespace MonoBehaviorInheritors
+namespace MonoBehaviorInheritors.Main
 {
     public class CatStorage : MonoBehaviour
     {

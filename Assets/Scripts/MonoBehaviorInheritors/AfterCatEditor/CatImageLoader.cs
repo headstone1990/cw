@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using MonoBehaviorInheritors.Main;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace MonoBehaviorInheritors.AfterCatEditor

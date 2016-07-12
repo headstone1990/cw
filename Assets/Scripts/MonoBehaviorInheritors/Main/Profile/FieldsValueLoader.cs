@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using MonoBehaviorInheritors;
+using MonoBehaviorInheritors.Main;
 using UnityEngine.UI;
 
 public class FieldsValueLoader : MonoBehaviour

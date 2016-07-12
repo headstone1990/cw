@@ -1,5 +1,6 @@
 ﻿using MonoBehaviorInh;
 using MonoBehaviorInheritors;
+using MonoBehaviorInheritors.Main;
 using MonoBehaviorInheritors.TraitsSelection;
 using UnityEngine;
 using UnityEngine.UI;
