@@ -96,7 +96,7 @@ GameObject:
   - 223: {fileID: 37765753}
   - 114: {fileID: 37765752}
   - 114: {fileID: 37765751}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,7 +168,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 2
   m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1101623214}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -188,7 +188,7 @@ GameObject:
   - 224: {fileID: 47940331}
   - 222: {fileID: 47940333}
   - 114: {fileID: 47940332}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Image (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +256,7 @@ GameObject:
   - 224: {fileID: 93592557}
   - 222: {fileID: 93592559}
   - 114: {fileID: 93592558}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Image (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -322,7 +322,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 98458107}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -374,7 +374,7 @@ GameObject:
   - 224: {fileID: 100064438}
   - 222: {fileID: 100064440}
   - 114: {fileID: 100064439}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: DayInClan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -591,6 +591,30 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 103978, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 181392, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 151300, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 179728, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 134130, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 157854, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
   m_IsPrefabParent: 0
@@ -604,7 +628,7 @@ GameObject:
   - 224: {fileID: 146929044}
   - 222: {fileID: 146929046}
   - 114: {fileID: 146929045}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Quests
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -678,7 +702,7 @@ GameObject:
   - 224: {fileID: 168555436}
   - 222: {fileID: 168555438}
   - 114: {fileID: 168555437}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Image (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -746,7 +770,7 @@ GameObject:
   - 224: {fileID: 218860575}
   - 222: {fileID: 218860577}
   - 114: {fileID: 218860576}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Healing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -820,7 +844,7 @@ GameObject:
   - 224: {fileID: 226737611}
   - 222: {fileID: 226737613}
   - 114: {fileID: 226737612}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: StaminaValue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -895,7 +919,7 @@ GameObject:
   - 224: {fileID: 278461123}
   - 222: {fileID: 278461125}
   - 114: {fileID: 278461124}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Image1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -963,7 +987,7 @@ GameObject:
   - 224: {fileID: 295850820}
   - 222: {fileID: 295850822}
   - 114: {fileID: 295850821}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Image3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1031,7 +1055,7 @@ GameObject:
   - 224: {fileID: 297214115}
   - 222: {fileID: 297214117}
   - 114: {fileID: 297214116}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: StaminaTitle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1182,6 +1206,30 @@ Prefab:
       propertyPath: m_Name
       value: Stamina
       objectReference: {fileID: 0}
+    - target: {fileID: 103978, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 181392, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 151300, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 179728, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 134130, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 157854, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
   m_IsPrefabParent: 0
@@ -1272,6 +1320,30 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 103978, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 181392, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 151300, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 179728, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 134130, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 157854, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
   m_IsPrefabParent: 0
@@ -1285,7 +1357,7 @@ GameObject:
   - 224: {fileID: 468522526}
   - 222: {fileID: 468522528}
   - 114: {fileID: 468522527}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Map
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1359,7 +1431,7 @@ GameObject:
   - 224: {fileID: 491639269}
   - 222: {fileID: 491639271}
   - 114: {fileID: 491639270}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Gender
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1427,7 +1499,7 @@ GameObject:
   - 224: {fileID: 522733506}
   - 222: {fileID: 522733508}
   - 114: {fileID: 522733507}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: MoonDescription
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1501,7 +1573,7 @@ GameObject:
   - 224: {fileID: 526010426}
   - 222: {fileID: 526010428}
   - 114: {fileID: 526010427}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: LookValue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1577,7 +1649,7 @@ GameObject:
   - 222: {fileID: 527904057}
   - 114: {fileID: 527904056}
   - 114: {fileID: 527904058}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: WarriorTraits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1690,7 +1762,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 539591964}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1733,7 +1805,7 @@ GameObject:
   - 224: {fileID: 539636033}
   - 222: {fileID: 539636035}
   - 114: {fileID: 539636034}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Image (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1799,7 +1871,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 583920519}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: ProfileDecorWood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1835,7 +1907,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 589437706}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1875,7 +1947,7 @@ GameObject:
   - 224: {fileID: 596144635}
   - 222: {fileID: 596144637}
   - 114: {fileID: 596144636}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1947,7 +2019,7 @@ GameObject:
   m_Component:
   - 224: {fileID: 602876920}
   - 114: {fileID: 602876921}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Equip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1994,7 +2066,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 624328789}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2035,7 +2107,7 @@ GameObject:
   - 224: {fileID: 648004265}
   - 222: {fileID: 648004267}
   - 114: {fileID: 648004266}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Image (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2111,7 +2183,7 @@ GameObject:
   - 82: {fileID: 658739475}
   - 114: {fileID: 658739474}
   - 114: {fileID: 658739473}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Profile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2295,7 +2367,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -2317,7 +2389,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
 --- !u!114 &662281210 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11418842, guid: 1024a4f91e07007429f8a82de0582350,
@@ -2334,7 +2406,7 @@ GameObject:
   - 224: {fileID: 709075649}
   - 222: {fileID: 709075651}
   - 114: {fileID: 709075650}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Rang
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2408,7 +2480,7 @@ GameObject:
   - 224: {fileID: 747889289}
   - 222: {fileID: 747889291}
   - 114: {fileID: 747889290}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: LookTitle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2482,7 +2554,7 @@ GameObject:
   - 224: {fileID: 770464667}
   - 222: {fileID: 770464669}
   - 114: {fileID: 770464668}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Clan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2615,7 +2687,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6553710a00319f24193afd21ace13fc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 0}
   _rawImage: {fileID: 1522579135}
 --- !u!1 &806288788
 GameObject:
@@ -2627,7 +2698,7 @@ GameObject:
   - 224: {fileID: 806288789}
   - 222: {fileID: 806288791}
   - 114: {fileID: 806288790}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Diary
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2747,7 +2818,7 @@ GameObject:
   - 224: {fileID: 842841636}
   - 222: {fileID: 842841638}
   - 114: {fileID: 842841637}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: PlayerImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2820,7 +2891,7 @@ GameObject:
   - 224: {fileID: 910970868}
   - 222: {fileID: 910970870}
   - 114: {fileID: 910970869}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: DayTime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2894,7 +2965,7 @@ GameObject:
   - 224: {fileID: 919420240}
   - 222: {fileID: 919420242}
   - 114: {fileID: 919420241}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: StrengthValue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2971,7 +3042,7 @@ GameObject:
   - 114: {fileID: 922626278}
   - 114: {fileID: 922626281}
   - 114: {fileID: 922626280}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3078,7 +3149,7 @@ GameObject:
   - 224: {fileID: 932161017}
   - 222: {fileID: 932161019}
   - 114: {fileID: 932161018}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: AgilityValue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3153,7 +3224,7 @@ GameObject:
   - 224: {fileID: 961281072}
   - 222: {fileID: 961281074}
   - 114: {fileID: 961281073}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: IntellectTitle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3227,7 +3298,7 @@ GameObject:
   - 224: {fileID: 995778364}
   - 222: {fileID: 995778366}
   - 114: {fileID: 995778365}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3300,7 +3371,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 1013501193}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: LeftEquip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3341,7 +3412,7 @@ GameObject:
   - 224: {fileID: 1056232641}
   - 222: {fileID: 1056232643}
   - 114: {fileID: 1056232642}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3418,7 +3489,7 @@ GameObject:
   - 224: {fileID: 1058374988}
   - 222: {fileID: 1058374990}
   - 114: {fileID: 1058374989}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Manual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3490,7 +3561,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 1068431155}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: WarriorTraits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3525,7 +3596,7 @@ GameObject:
   - 224: {fileID: 1074747198}
   - 222: {fileID: 1074747200}
   - 114: {fileID: 1074747199}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Traits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3597,7 +3668,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 1078618860}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: DefaultView
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3632,7 +3703,7 @@ GameObject:
   m_Component:
   - 224: {fileID: 1088926000}
   - 114: {fileID: 1088926001}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Script
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3694,7 +3765,6 @@ GameObject:
   - 124: {fileID: 1101623213}
   - 92: {fileID: 1101623212}
   - 81: {fileID: 1101623211}
-  - 114: {fileID: 1101623216}
   m_Layer: 0
   m_Name: Main camera
   m_TagString: Untagged
@@ -3743,7 +3813,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 540
+  orthographic size: 5.4
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -3770,17 +3840,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &1101623216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1101623210}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef7b3831c416f444f88ed3cdb6c5e3ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1194261253
 GameObject:
   m_ObjectHideFlags: 0
@@ -3791,7 +3850,7 @@ GameObject:
   - 224: {fileID: 1194261254}
   - 222: {fileID: 1194261255}
   - 114: {fileID: 1194261256}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Profile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3849,7 +3908,7 @@ GameObject:
   - 224: {fileID: 1196031027}
   - 222: {fileID: 1196031029}
   - 114: {fileID: 1196031028}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: IntellectValue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3927,7 +3986,7 @@ GameObject:
   - 114: {fileID: 1211079274}
   - 114: {fileID: 1211079275}
   - 82: {fileID: 1211079276}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: EquipmentOutfit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4145,7 +4204,7 @@ GameObject:
   - 224: {fileID: 1247216131}
   - 222: {fileID: 1247216133}
   - 114: {fileID: 1247216132}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Friends
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4296,6 +4355,30 @@ Prefab:
       propertyPath: m_Name
       value: Look
       objectReference: {fileID: 0}
+    - target: {fileID: 103978, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 181392, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 151300, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 179728, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 134130, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 157854, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
   m_IsPrefabParent: 0
@@ -4309,7 +4392,7 @@ GameObject:
   - 224: {fileID: 1331970999}
   - 222: {fileID: 1331971001}
   - 114: {fileID: 1331971000}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Inventory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4383,7 +4466,7 @@ GameObject:
   - 224: {fileID: 1363152532}
   - 222: {fileID: 1363152534}
   - 114: {fileID: 1363152533}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Text (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4457,7 +4540,7 @@ GameObject:
   - 224: {fileID: 1377070137}
   - 222: {fileID: 1377070139}
   - 114: {fileID: 1377070138}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: PopularityTitle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4531,7 +4614,7 @@ GameObject:
   - 224: {fileID: 1381624513}
   - 222: {fileID: 1381624515}
   - 114: {fileID: 1381624514}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Image (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4603,7 +4686,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 1415089164}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Traits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4645,7 +4728,7 @@ GameObject:
   - 222: {fileID: 1522579137}
   - 114: {fileID: 1522579136}
   - 114: {fileID: 1522579139}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Viewport
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4804,7 +4887,7 @@ GameObject:
   - 224: {fileID: 1564180483}
   - 222: {fileID: 1564180485}
   - 114: {fileID: 1564180484}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Image (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4870,7 +4953,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 1569270874}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: RightEquip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4905,7 +4988,7 @@ GameObject:
   - 224: {fileID: 1574759353}
   - 222: {fileID: 1574759355}
   - 114: {fileID: 1574759354}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Image2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4973,7 +5056,7 @@ GameObject:
   - 224: {fileID: 1658927619}
   - 222: {fileID: 1658927621}
   - 114: {fileID: 1658927620}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: PopularityValue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5046,7 +5129,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 1691400715}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: TopClans
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5081,7 +5164,7 @@ GameObject:
   - 224: {fileID: 1709692443}
   - 222: {fileID: 1709692445}
   - 114: {fileID: 1709692444}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: ImageMoonSun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5149,7 +5232,7 @@ GameObject:
   - 224: {fileID: 1728484072}
   - 222: {fileID: 1728484074}
   - 114: {fileID: 1728484073}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: StrengthTitle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5228,7 +5311,7 @@ GameObject:
   - 224: {fileID: 1833773174}
   - 222: {fileID: 1833773176}
   - 114: {fileID: 1833773175}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Text (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5302,7 +5385,7 @@ GameObject:
   - 224: {fileID: 1850963456}
   - 222: {fileID: 1850963458}
   - 114: {fileID: 1850963457}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Text (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5379,7 +5462,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 1965612696}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: DecorWood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5499,6 +5582,30 @@ Prefab:
       propertyPath: m_Name
       value: Intellect
       objectReference: {fileID: 0}
+    - target: {fileID: 103978, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 181392, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 151300, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 179728, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 134130, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 157854, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
   m_IsPrefabParent: 0
@@ -5518,7 +5625,7 @@ GameObject:
   - 224: {fileID: 2012941376}
   - 222: {fileID: 2012941378}
   - 114: {fileID: 2012941377}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: AgilityTitle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5669,6 +5776,30 @@ Prefab:
       propertyPath: m_Name
       value: Popularity
       objectReference: {fileID: 0}
+    - target: {fileID: 103978, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 181392, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 151300, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 179728, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 134130, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 157854, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1024a4f91e07007429f8a82de0582350, type: 2}
   m_IsPrefabParent: 0
@@ -5682,7 +5813,7 @@ GameObject:
   - 224: {fileID: 2021495926}
   - 222: {fileID: 2021495928}
   - 114: {fileID: 2021495927}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Season
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5756,7 +5887,7 @@ GameObject:
   - 224: {fileID: 2038533318}
   - 222: {fileID: 2038533320}
   - 114: {fileID: 2038533319}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Age
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5830,7 +5961,7 @@ GameObject:
   - 224: {fileID: 2065408048}
   - 222: {fileID: 2065408050}
   - 114: {fileID: 2065408049}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: TopClans
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5910,7 +6041,7 @@ GameObject:
   - 224: {fileID: 2106261606}
   - 222: {fileID: 2106261608}
   - 114: {fileID: 2106261607}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: WetherCondition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5985,7 +6116,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 2116992629}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6025,7 +6156,7 @@ GameObject:
   - 224: {fileID: 2119812198}
   - 222: {fileID: 2119812200}
   - 114: {fileID: 2119812199}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Text (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6101,7 +6232,7 @@ GameObject:
   - 114: {fileID: 2137698002}
   - 222: {fileID: 2137698001}
   - 114: {fileID: 2137698000}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: NameMask
   m_TagString: Untagged
   m_Icon: {fileID: 0}

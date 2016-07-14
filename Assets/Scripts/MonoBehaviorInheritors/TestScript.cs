@@ -1,5 +1,5 @@
-﻿using MonoBehaviorInheritors.Main;
-using UnityEngine;
+﻿using UnityEngine;
+
 
 namespace MonoBehaviorInheritors
 {
@@ -7,7 +7,6 @@ namespace MonoBehaviorInheritors
     {
         public void Start()
         {
-            
         }
     }
 }
