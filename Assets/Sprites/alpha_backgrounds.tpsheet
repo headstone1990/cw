@@ -1,0 +1,12 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# Sprite sheet: alpha_backgrounds.png (4096 x 2048)
+# $TexturePacker:SmartUpdate:8072372faa28ba90fd5f13a3b1ae187b:689215108a8309d1e12a55265be1d940:2481b9b40301e9711f947543881ee367$
+#
+
+blank;2;966;1920;1080;0.5;0.5
+white_background_editor_text;1924;966;1920;1080;0.5;0.5

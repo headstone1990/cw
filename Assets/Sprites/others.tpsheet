@@ -1,0 +1,15 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# Sprite sheet: others.png (2048 x 1024)
+# $TexturePacker:SmartUpdate:34db226629872e556f798fbfe2891fb2:25ca5e4095d42cc3a675410cae2e0f8b:30b24ee210d5203041188a5069236dca$
+#
+
+black;2;698;1920;324;0.5;0.5
+name;56;596;500;100;0.5;0.5
+scroll_handle;1924;822;52;200;0.5;0.5
+scrollbar;2;24;52;672;0.5;0.5
+strip;1924;64;5;756;0.5;0.5
