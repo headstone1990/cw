@@ -12,7 +12,7 @@ namespace MonoBehaviorInh.Common
         private void Awake()
         {
             _image = GetComponent<Image>();
-            _image.eventAlphaThreshold = AlphaThreshold;
+            _image.alphaHitTestMinimumThreshold = AlphaThreshold;
         }
     }
 }

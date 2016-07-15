@@ -6,6 +6,8 @@ using UserExceptions;
 
 namespace MonoBehaviorInh.CatEditor
 {
+    using CW.Backend;
+
     public class PlayerCreator : MonoBehaviour {
         private CatStorage _catStorage;
 

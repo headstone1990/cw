@@ -1,11 +1,14 @@
-﻿using UnityEngine;
-
-
-namespace MonoBehaviorInheritors
+﻿namespace CW.MonoBehaviorInheritors
 {
+    using UnityEngine;
+
     public class TestScript : MonoBehaviour
     {
         public void Start()
+        {
+        }
+
+        public void Update()
         {
         }
     }

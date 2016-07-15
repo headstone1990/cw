@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 namespace MonoBehaviorInheritors.CatEditor
 {
+    using CW.Backend;
+
     public class FullCatImageSaver : MonoBehaviour
     {
         [SerializeField] private Sprite _blank = null;
