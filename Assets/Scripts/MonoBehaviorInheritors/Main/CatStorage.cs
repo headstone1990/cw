@@ -3,6 +3,8 @@ using UserExceptions;
 
 namespace MonoBehaviorInheritors.Main
 {
+    using CW.Backend;
+
     public class CatStorage : MonoBehaviour
     {
         public Player Player { get; private set; }

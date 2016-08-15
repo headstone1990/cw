@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 namespace MonoBehaviorInh.CatEditor
 {
+    using CW.Backend;
 
     public class CatIntegrityChecker : MonoBehaviour
     {

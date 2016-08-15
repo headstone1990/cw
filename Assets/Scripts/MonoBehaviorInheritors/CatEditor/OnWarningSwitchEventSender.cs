@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 namespace MonoBehaviorInheritors.CatEditor
 {
+    using CW.Frontend.CustomUIElements.Interfaces;
+
     public class OnWarningSwitchEventSender : MonoBehaviour
     {
         private GameObject _eventSystem;

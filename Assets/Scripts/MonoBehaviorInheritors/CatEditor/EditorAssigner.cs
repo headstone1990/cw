@@ -2,6 +2,8 @@
 
 namespace MonoBehaviorInheritors.CatEditor
 {
+    using CW.Backend;
+
     public class EditorAssigner : MonoBehaviour
     {
         private PlayerAvatar _playerAvatar;

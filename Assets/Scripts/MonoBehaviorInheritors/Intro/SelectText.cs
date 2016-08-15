@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -8,20 +10,22 @@ public class SelectText : MonoBehaviour
     public string textStringM;
     public string textStringF;
 
-    void Awake()
+    private void Awake()
     {
-        text = GetComponent<Text>();
+        this.text = this.GetComponent<Text>();
     }
 
-    void Start()
+    private void Start()
     {
-        if (GlobalVariables.gender == "male")
-        {
-            text.text = textStringM;
-        }
-        else if (GlobalVariables.gender == "female")
-        {
-            text.text = textStringF;
-        }
+        throw new NotImplementedException();
+
+//        if (GlobalVariables.gender == "male")
+//        {
+//            text.text = textStringM;
+//        }
+//        else if (GlobalVariables.gender == "female")
+//        {
+//            text.text = textStringF;
+//        }
     }
 }
