@@ -7,7 +7,7 @@
 
     public class CustomEventSystem : EventSystem, IOnWarningSwitch
     {
-        [SerializeField] private GameObject _defaultGameObject = null; //Set in inspector Элемент, который по умолчанию 
+        [SerializeField] private GameObject _defaultGameObject = null; //Set in inspector //Элемент, который по умолчанию является "selected"
         private GameObject _previousSelectedGameObject;
 
         public void OnWarningEnable(GameObject warningButton, params Button[] disabledButtons)
@@ -42,7 +42,7 @@
             base.Update();
             if (currentSelectedGameObject == null)
             {
-                FirstTimeChooseGameObject();
+                SelectSelectableWhenNothingIsSelected();
             }
 
             if (Input.GetButtonUp("Cancel"))
@@ -55,8 +55,8 @@
                 _previousSelectedGameObject = currentSelectedGameObject;
             }
         }
-
-        private void FirstTimeChooseGameObject()
+        // выбрать объект, когда никакой другой объект не выбран
+        private void SelectSelectableWhenNothingIsSelected()
         {
             if (Input.GetAxis("Horizontal") < 0f)
             {
