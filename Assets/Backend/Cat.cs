@@ -1,50 +1,51 @@
-﻿#region
-
-using System.Collections.Generic;
-using MonoBehaviorInheritors.Main;
-using UnityEngine;
-
-#endregion
-
-public abstract class Cat
+﻿namespace CW.Backend
 {
-    private IngameTime _birthday;
-    protected LinkedList<CatsAction> _previosActions = new LinkedList<CatsAction>();
-    private List<Traits> _traits = new List<Traits>();
+    using System.Collections.Generic;
+    using global::MonoBehaviorInheritors.Main;
+    using UnityEngine;
 
-
-    protected Cat()
+    public abstract class Cat
     {
-        Characteristics = new Characteristics();
-    }
+        private IngameTime _birthday;
 
-    public Texture2D Avatar { get; set; }
-    public CatsAction CurrentAction { get; set; }
-    public Characteristics Characteristics { get; set; }
-    public string Clan { get; set; }
-    public bool IsMale { get; set; }
-    public int MoonInClan { get; set; }
-    public string Name { get; set; }
-    public string Rang { get; set; }
-
-    public List<Traits> Traits
-    {
-        get { return _traits; }
-
-        set { _traits = value; }
-    }
-
-    public IngameTimeInterval Age
-    {
-        get { return TimeController.Instance.CurrentTime - _birthday; }
-    }
-
-
-    public IngameTime DebugBirthdaySetter
-    {
-        set
+        protected Cat(IngameTime birthday)
         {
-            _birthday = value;
+            Characteristics = new Characteristics();
+            Traits = new List<Traits>();
+            _birthday = birthday;
         }
+
+        public Texture2D Avatar { get; set; }
+
+        public CatsAction CurrentAction { get; set; }
+
+        public Characteristics Characteristics { get; set; }
+
+        public string Clan { get; set; }
+
+        public bool IsMale { get; set; }
+
+        public int MoonInClan { get; set; }
+
+        public string Name { get; set; }
+
+        public string Rang { get; set; }
+
+        public List<Traits> Traits { get; set; }
+
+        public IngameTimeInterval Age
+        {
+            get { return TimeController.CurrentTime - _birthday; }
+        }
+
+        public IngameTime DebugBirthdaySetter
+        {
+            set
+            {
+                _birthday = value;
+            }
+        }
+
+        protected LinkedList<CatsAction> PreviousActions { get; set; }
     }
 }

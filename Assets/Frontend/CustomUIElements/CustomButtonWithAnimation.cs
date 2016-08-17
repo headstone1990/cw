@@ -1,10 +1,10 @@
-﻿using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.UI;
-using System.Collections;
-
-namespace MonoBehaviorInheritors.Common
+﻿namespace CW.Frontend.CustomUIElements
 {
+    using System.Collections;
+    using UnityEngine;
+    using UnityEngine.EventSystems;
+    using UnityEngine.UI;
+
     [RequireComponent(typeof(AudioSource))]
     [RequireComponent(typeof(Animator))]
     public class CustomButtonWithAnimation : Button
@@ -17,15 +17,6 @@ namespace MonoBehaviorInheritors.Common
         private Animator _animator;
         private AudioSource _audioSource;
         private EventSystem _eventSystem;
-
-
-        protected override void Awake()
-        {
-            base.Awake();
-            _animator = GetComponent<Animator>();
-            _audioSource = GetComponent<AudioSource>();
-            _eventSystem = GameObject.FindGameObjectWithTag("EventSystem").GetComponent<EventSystem>();
-        }
 
         public override void OnPointerEnter(PointerEventData eventData)
         {
@@ -42,7 +33,10 @@ namespace MonoBehaviorInheritors.Common
         public override void OnSubmit(BaseEventData eventData)
         {
             if (!IsActive() || !IsInteractable())
+            {
                 return;
+            }
+
             DoStateTransition(SelectionState.Pressed, false);
             _animator.SetBool("IsPointerClick", true);
             _audioSource.PlayOneShot(_click);
@@ -61,6 +55,7 @@ namespace MonoBehaviorInheritors.Common
             base.OnPointerUp(eventData);
             _animator.SetBool("IsPointerClick", false);
         }
+
         public override void OnSelect(BaseEventData eventData)
         {
             base.OnSelect(eventData);
@@ -74,6 +69,13 @@ namespace MonoBehaviorInheritors.Common
             _animator.SetBool("IsPointerEnter", false);
         }
 
+        protected override void Awake()
+        {
+            base.Awake();
+            _animator = GetComponent<Animator>();
+            _audioSource = GetComponent<AudioSource>();
+            _eventSystem = EventSystem.current;
+        }
 
         private IEnumerator OnFinishSubmit()
         {
@@ -81,10 +83,10 @@ namespace MonoBehaviorInheritors.Common
             {
                 yield return null;
             }
+
             DoStateTransition(SelectionState.Normal, false);
             _animator.SetBool("IsPointerClick", false);
             onClick.Invoke();
         }
-
     }
 }

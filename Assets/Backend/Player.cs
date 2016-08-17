@@ -1,19 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-
-using CW.Backend;
-
-using UnityEngine;
-
-public class Player : Cat
+﻿namespace CW.Backend
 {
-    private PlayerAvatar _playerAvatar = new PlayerAvatar();
+    using global::MonoBehaviorInheritors.Main;
 
-
-    public PlayerAvatar PlayerAvatar
+    public class Player : Cat
     {
-        get { return _playerAvatar; }
-        set { _playerAvatar = value; }
-    }
+        public Player(IngameTime birthday) : base(birthday)
+        {
+            PlayerAvatar = new PlayerAvatar();
+        }
 
+        public PlayerAvatar PlayerAvatar { get; set; }
+    }
 }

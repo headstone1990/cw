@@ -4,6 +4,8 @@ using UnityEngine.UI;
 
 namespace MonoBehaviorInheritors.AfterCatEditor
 {
+    using CW.Backend.MonoBehaviorInheritors;
+
     public class CatImageLoader : MonoBehaviour
     {
         private void Start()

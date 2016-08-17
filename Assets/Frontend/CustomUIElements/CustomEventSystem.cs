@@ -55,6 +55,7 @@
                 _previousSelectedGameObject = currentSelectedGameObject;
             }
         }
+
         // выбрать объект, когда никакой другой объект не выбран
         private void SelectSelectableWhenNothingIsSelected()
         {

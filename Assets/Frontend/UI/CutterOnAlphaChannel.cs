@@ -1,13 +1,12 @@
-﻿using UnityEngine;
-using UnityEngine.UI;
-
-namespace MonoBehaviorInh.Common
+﻿namespace CW.Frontend.UI
 {
+    using UnityEngine;
+    using UnityEngine.UI;
+
     public class CutterOnAlphaChannel : MonoBehaviour
     {
-        private Image _image;
         private const float AlphaThreshold = 0.01f;
-
+        private Image _image;
 
         private void Awake()
         {

@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace MonoBehaviorInheritors.Main.Profile
 {
+    using CW.Backend;
+    using CW.Backend.MonoBehaviorInheritors;
+
     public class CatStorageDebugScript : MonoBehaviour
     {
         private Player _player;

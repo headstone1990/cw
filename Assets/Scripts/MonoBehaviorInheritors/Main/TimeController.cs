@@ -9,20 +9,16 @@ namespace MonoBehaviorInheritors.Main
 {
     public class TimeController : MonoBehaviour
     {
+        static TimeController()
+        {
+            CurrentTime = new IngameTime(1004, 1, 0, 0);
+        }
         public delegate void TimeAddedEventHandler(IngameTimeInterval time);
-
-
-        private IngameTime _currentTime = new IngameTime(1004, 1, 0, 0);
-
 
         public static TimeController Instance { get; private set; }
 
 
-        public IngameTime CurrentTime
-        {
-            get { return _currentTime; }
-        }
-
+        public static IngameTime CurrentTime { get; private set; }
 
         public event TimeAddedEventHandler OnTimeScrollStarted;
 
@@ -42,7 +38,7 @@ namespace MonoBehaviorInheritors.Main
 
         public void AddTime(IngameTimeInterval time)
         {
-            _currentTime = CurrentTime + time;
+            CurrentTime = CurrentTime + time;
             if (OnTimeScrollStarted != null) OnTimeScrollStarted.Invoke(time);
         }
     }

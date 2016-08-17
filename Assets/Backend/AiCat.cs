@@ -1,5 +1,7 @@
 ﻿#region
 
+using CW.Backend;
+
 using MonoBehaviorInheritors.Main;
 
 #endregion
@@ -9,8 +11,9 @@ public class AiCat : Cat
     private IngameTimeInterval _timeLeftOfCurrentTimeScroll;
 
 
-    public AiCat()
+    public AiCat(IngameTime birthday) : base(birthday)
     {
+
         TimeController.Instance.OnTimeScrollStarted += StartTimeScroll;
     }
 
@@ -54,9 +57,9 @@ public class AiCat : Cat
 
     private void RefreshPreviosActions()
     {
-        if (_previosActions.Count <= 4) return;
-        _previosActions.RemoveFirst();
-        _previosActions.AddLast(CurrentAction);
+        if (PreviousActions.Count <= 4) return;
+        PreviousActions.RemoveFirst();
+        PreviousActions.AddLast(CurrentAction);
     }
 }
 

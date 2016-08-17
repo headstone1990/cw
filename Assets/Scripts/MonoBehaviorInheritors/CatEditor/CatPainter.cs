@@ -7,6 +7,7 @@ using UnityEngine.UI;
 namespace MonoBehaviorInheritors.CatEditor
 {
     using CW.Backend;
+    using CW.Backend.MonoBehaviorInheritors;
 
     public class CatPainter : MonoBehaviour
     {

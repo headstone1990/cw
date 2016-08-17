@@ -6,7 +6,10 @@ using UnityEngine.UI;
 
 namespace MonoBehaviorInheritors.CatEditor
 {
+    using System.IO;
+
     using CW.Backend;
+    using CW.Backend.MonoBehaviorInheritors;
 
     public class FullCatImageSaver : MonoBehaviour
     {
@@ -31,6 +34,8 @@ namespace MonoBehaviorInheritors.CatEditor
         public void SaveCatImage()
         {
             CatStorage.Instance.Player.Avatar = BlendImages();
+            byte[] bytes = BlendImages().EncodeToPNG();
+            File.WriteAllBytes(@"C:\Users\HeadStone\Documents\test.png", bytes);
             SaveSibling();
         }
         private Texture2D BlendImages()
