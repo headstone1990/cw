@@ -1,11 +1,8 @@
 ﻿namespace CW.Backend.MonoBehaviorInheritors
 {
-    using Backend;
-
-    using global::MonoBehaviorInheritors.Main;
-
     using UnityEngine;
     using UnityEngine.SceneManagement;
+
     using UserExceptions;
 
     public class CatStorage : MonoBehaviour
@@ -44,9 +41,8 @@
                 Destroy(gameObject);
             }
 
-            if (Player == null && 
-                SceneManager.GetActiveScene().name != "MainMenu" && 
-                SceneManager.GetActiveScene().name != "PresetsOrEditorChoose")
+            if (Player == null && SceneManager.GetActiveScene().name != "MainMenu"
+                && SceneManager.GetActiveScene().name != "PresetsOrEditorChoose")
             {
                 CreatePlayerWithDefaultParameters();
             }

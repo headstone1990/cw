@@ -1,6 +1,5 @@
-﻿namespace CW.Frontend.CustomUIElements.Editor
+﻿namespace CW.View.Editor
 {
-    using CustomUIElements;
     using UnityEditor;
     using UnityEditor.UI;
 
@@ -8,23 +7,23 @@
     [CustomEditor(typeof(CustomButtonWithAnimation))]
     public class CustomButtonWithAnimationEditor : ButtonEditor
     {
-        private SerializedProperty _enter;
-        private SerializedProperty _click;
+        private SerializedProperty enter;
+        private SerializedProperty click;
 
         public override void OnInspectorGUI()
         {
             base.OnInspectorGUI();
             serializedObject.Update();
-            EditorGUILayout.PropertyField(_enter);
-            EditorGUILayout.PropertyField(_click);
+            EditorGUILayout.PropertyField(enter);
+            EditorGUILayout.PropertyField(click);
             serializedObject.ApplyModifiedProperties();
         }
 
         protected override void OnEnable()
         {
             base.OnEnable();
-            _enter = serializedObject.FindProperty("_enter");
-            _click = serializedObject.FindProperty("_click");
+            enter = serializedObject.FindProperty("enter");
+            click = serializedObject.FindProperty("click");
         }
     }
 }

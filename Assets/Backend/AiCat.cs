@@ -14,7 +14,7 @@ public class AiCat : Cat
     public AiCat(IngameTime birthday) : base(birthday)
     {
 
-        TimeController.Instance.OnTimeScrollStarted += StartTimeScroll;
+        //TimeController.Instance.OnTimeScrollStarted += StartTimeScroll;
     }
 
 

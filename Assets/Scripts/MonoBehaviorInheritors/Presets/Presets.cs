@@ -34,6 +34,7 @@ public class Presets : MonoBehaviour
 
     void Awake()
     {
+        _catImage = GetComponent<Image>();
         Display();
     }
 

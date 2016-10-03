@@ -1,11 +1,6 @@
-﻿#region
+﻿using UnityEngine;
 
-using DefaultNamespace;
-using UnityEngine;
-
-#endregion
-
-namespace MonoBehaviorInheritors.Main
+namespace CW.Backend.MonoBehaviorInheritors
 {
     public class TimeController : MonoBehaviour
     {
