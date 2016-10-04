@@ -11,44 +11,46 @@
     public class CustomButtonWithAnimation : Button
     {
         [SerializeField]
-        private AudioClip enter; // Set in inspector
+        private AudioClip highlightSound; // Set in inspector
 
         [SerializeField]
-        private AudioClip click; // Set in inspector
+        private AudioClip clickSound; // Set in inspector
 
         private new Animator animator;
 
         private AudioSource audioSource;
 
-        private EventSystem eventSystem;
+        private bool mouseOverButton;
+
+        protected override void Awake()
+        {
+            base.Awake();
+            animator = GetComponent<Animator>();
+            audioSource = GetComponent<AudioSource>();
+        }
 
         public override void OnPointerEnter(PointerEventData eventData)
         {
             base.OnPointerEnter(eventData);
-            GetComponent<Button>().Select();
+            animator.SetBool("IsPointerEnter", true);
+            if (mouseOverButton) return;
+
+            audioSource.PlayOneShot(highlightSound);
+            mouseOverButton = true;
         }
 
         public override void OnPointerExit(PointerEventData eventData)
         {
             base.OnPointerExit(eventData);
-            eventSystem.SetSelectedGameObject(null);
-        }
-
-        public override void OnSubmit(BaseEventData eventData)
-        {
-            if (!IsActive() || !IsInteractable()) return;
-
-            DoStateTransition(SelectionState.Pressed, false);
-            animator.SetBool("IsPointerClick", true);
-            audioSource.PlayOneShot(click);
-            StartCoroutine(OnFinishSubmit());
+            animator.SetBool("IsPointerEnter", false);
+            mouseOverButton = false;
         }
 
         public override void OnPointerDown(PointerEventData eventData)
         {
             base.OnPointerDown(eventData);
             animator.SetBool("IsPointerClick", true);
-            audioSource.PlayOneShot(click);
+            audioSource.PlayOneShot(clickSound);
         }
 
         public override void OnPointerUp(PointerEventData eventData)
@@ -60,29 +62,33 @@
         public override void OnSelect(BaseEventData eventData)
         {
             base.OnSelect(eventData);
+            if (mouseOverButton) return;
             animator.SetBool("IsPointerEnter", true);
-            audioSource.PlayOneShot(enter);
+            audioSource.PlayOneShot(highlightSound);
         }
 
         public override void OnDeselect(BaseEventData eventData)
         {
             base.OnDeselect(eventData);
+            if (mouseOverButton) return;
             animator.SetBool("IsPointerEnter", false);
         }
 
-        protected override void Awake()
+        public override void OnSubmit(BaseEventData eventData)
         {
-            base.Awake();
-            animator = GetComponent<Animator>();
-            audioSource = GetComponent<AudioSource>();
-            eventSystem = EventSystem.current;
+            if (!IsActive() || !IsInteractable()) return;
+
+            DoStateTransition(SelectionState.Pressed, false);
+            animator.SetBool("IsPointerClick", true);
+            audioSource.PlayOneShot(clickSound);
+            StartCoroutine(OnFinishSubmit());
         }
 
         private IEnumerator OnFinishSubmit()
         {
             while (Input.GetButton("Submit")) yield return null;
 
-            DoStateTransition(SelectionState.Normal, false);
+            DoStateTransition(SelectionState.Highlighted, false);
             animator.SetBool("IsPointerClick", false);
             onClick.Invoke();
         }

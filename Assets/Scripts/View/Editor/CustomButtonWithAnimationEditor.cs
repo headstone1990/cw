@@ -22,8 +22,8 @@
         protected override void OnEnable()
         {
             base.OnEnable();
-            enter = serializedObject.FindProperty("enter");
-            click = serializedObject.FindProperty("click");
+            enter = serializedObject.FindProperty("highlightSound");
+            click = serializedObject.FindProperty("clickSound");
         }
     }
 }

@@ -1,10 +1,13 @@
 fileFormatVersion: 2
 guid: 1eb7a8bd17716604a84c07176d0e297f
-timeCreated: 1460151678
+timeCreated: 1475558897
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - m_TargetGraphic: {instanceID: 0}
+  - highlightSound: {fileID: 8300000, guid: 60fb8425c65497342bc7268b82713bd2, type: 3}
+  - clickSound: {fileID: 8300000, guid: 1bd60135bb694b3439ee333661f4dc17, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
