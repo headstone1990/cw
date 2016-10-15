@@ -14,6 +14,8 @@ Assets/AssetStoreTools*
 ExportedObj/
 obj/
 .vscode/
+/*.sln
+/*.csproj
 *.svd
 *.userprefs
 *.pidb
