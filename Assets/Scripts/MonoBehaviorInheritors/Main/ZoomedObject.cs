@@ -1,7 +1,6 @@
 ﻿using Interfaces;
 using UnityEngine;
 using System.Collections;
-using UnityEditor;
 
 namespace MonoBehaviorInheritors.Main
 {
