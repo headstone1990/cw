@@ -29,7 +29,7 @@ namespace MonoBehaviorInheritors.AfterCatEditor
                 Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/CW");
             }
             var filePath = string.Format("{0}/{1}.png", Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/CW", DateTime.Now.ToString("yyyy_MM_dd_hh-mm-ss"));
-            Application.CaptureScreenshot(filePath);
+            ScreenCapture.CaptureScreenshot(filePath);
             foreach (var element in _switchableUiElements)
             {
                 element.SetActive(true);
