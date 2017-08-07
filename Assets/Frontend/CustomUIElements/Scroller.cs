@@ -10,26 +10,23 @@ namespace CW.Frontend.CustomUIElements
     {
         public RectTransform Content;
         private bool _isMoving;
-        private Queue<Movement> _movements;
         private float _lastFixedPosition;
-
+        public Queue<Movement> Movements { get; private set; }
+        
         void Start()
         {
-            _movements = new Queue<Movement>();
+            Movements = new Queue<Movement>();
         }
 
-        void Update()
+        private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetAxis("Mouse ScrollWheel") >= 0.1f)
-            {
-                _movements.Enqueue(Movement.Left);
-            }
-            if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetAxis("Mouse ScrollWheel") <= -0.1f)
-            {
-                _movements.Enqueue(Movement.Right);
-            }
-            if (_isMoving || !_movements.Any()) return;
-            var movement = _movements.Dequeue();
+            MoveContent();
+        }
+
+        private void MoveContent()
+        {
+            if (_isMoving || !Movements.Any()) return;
+            var movement = Movements.Dequeue();
             if (Content.anchoredPosition.x >= 0 && movement == Movement.Left
                 || Content.anchoredPosition.x <= -3630 && movement == Movement.Right
             )
@@ -57,7 +54,7 @@ namespace CW.Frontend.CustomUIElements
                 yield return null;
             }
             Content.anchoredPosition = endPosition;
-            _lastFixedPosition = endPosition.x;
+            _lastFixedPosition = endPosition.x;               
             _isMoving = false;
         }
     }
