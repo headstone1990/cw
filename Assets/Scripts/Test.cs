@@ -1,7 +1,6 @@
-﻿namespace DefaultNamespace
-{
-    public class Test
-    {
+﻿using UnityEngine;
 
-    }
+public abstract class Test : MonoBehaviour
+{
+    
 }
