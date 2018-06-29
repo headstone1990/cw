@@ -103,7 +103,7 @@ namespace MonoBehaviorInheritors.MiniGames.RiverCrossing
 
         private void OnTriggerExit2D(Collider2D collision)
         {
-            if (collision.tag == "StrongStreamBorder")
+            if (collision.CompareTag("StrongStreamBorder"))
             {
                 _currentState = State.Default;
             }
@@ -152,7 +152,7 @@ namespace MonoBehaviorInheritors.MiniGames.RiverCrossing
                     {
                         _currentState = State.MoveViaObstacle;
                         GetComponent<Collider2D>().enabled = false;
-                        GetComponent<Rigidbody2D>().isKinematic = true;
+                        GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
                         GetComponent<SpriteRenderer>().sortingOrder =
                             obstacle.GetComponent<SpriteRenderer>().sortingOrder +
                             1;
@@ -170,19 +170,23 @@ namespace MonoBehaviorInheritors.MiniGames.RiverCrossing
         private IEnumerator MovePlayerOverObstacle(ClimbedOnlyObstacleScript climbedOnlyObstacleScript)
         {
             Vector2 targetPosition = new Vector2(transform.position.x, climbedOnlyObstacleScript.PlayerPositionAfterMovingViaObstacle);
-            while (Vector2.Distance(transform.position, targetPosition) > 0.1f)
+            //_player.velocity = new Vector2(0f, 0f);
+            Vector2 startPosition = transform.position;
+            float timer = 0.0f;
+            float time = 5.0f;
+
+            while (timer <= time)
             {
-                _player.velocity = new Vector2(_player.velocity.x, _verticalSpeed);
-                yield return new WaitForFixedUpdate();
+                transform.position = Vector2.Lerp(startPosition, targetPosition,
+                    climbedOnlyObstacleScript.OvercomeCurve.Evaluate(timer / time));
+                timer += Time.deltaTime;
+                yield return null;
             }
+            
             StopCoroutine(KeyListener(null));
             GetComponent<Collider2D>().enabled = true;
-            GetComponent<Rigidbody2D>().isKinematic = false;
+            GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
             _currentState = State.Default;
-        }
-
-        public void Update()
-        {
         }
     }
 }

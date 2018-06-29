@@ -34,12 +34,6 @@ namespace MonoBehaviorInheritors.MiniGames.RiverCrossing.Obstacles
 
 
 
-        public float PlayerPositionAfterMovingViaObstacle
-        {
-            get
-            {
-                return transform.Find("PlayerPoint").position.y;
-            }
-        }
+        public float PlayerPositionAfterMovingViaObstacle => transform.Find("PlayerPoint").position.y;
     }
 }
